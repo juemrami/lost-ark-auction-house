@@ -1,6 +1,6 @@
 # Custom
-/.image_dump/
-/.vscode/
+.image_dump
+.vscode
 # Logs
 logs
 *.log

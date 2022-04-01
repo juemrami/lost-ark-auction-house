@@ -58,8 +58,8 @@ export async function _captureImage(x, y, width, height, ID) {
     .flatten()
     .resize(width * 4, height * 4, { kernel: "lanczos3" })
     .withMetadata({ density: 150 })
-    .jpeg()
-    .toFile(`.image_dump/${ID}.jpeg`);
+    .png()
+    .toFile(`.image_dump/${ID}.png`);
   return sharpImg;
 }
 

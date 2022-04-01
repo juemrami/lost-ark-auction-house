@@ -22,8 +22,11 @@ export default class AuctionExtractor {
   _worker;
   constructor() {
     this._worker = createWorker({
-      logger: (m) => {},
+      logger: (m) => {
+        console.log(m);
+      },
     });
+    this._worker.load();
   }
 
   async start(interest_list) {
@@ -60,7 +63,7 @@ export default class AuctionExtractor {
     return market_prices;
   }
 
-  async ocr(x, y, width, height, charset, debug_name = false) {
+  async ocr(x, y, width, height, charset, debug_name = false, lang) {
     // const ogBuffer = await captureImage(x, y, width, height, debug_name);
     const img = await _captureImage(x, y, width, height, debug_name);
     //console.log(ogBuffer, imgBuffer);
@@ -69,7 +72,7 @@ export default class AuctionExtractor {
     });
     const {
       data: { text },
-    } = await this._worker.recognize(await img.toBuffer());
+    } = await this._worker.recognize(await img.toBuffer(),);
     return text ?? "";
   }
 
@@ -95,17 +98,14 @@ export default class AuctionExtractor {
       await wait(250);
     }
 
-    await this._worker.load();
-    await this._worker.loadLanguage("eng");
-    await this._worker.initialize("eng");
-
     const priceText = await this.ocr(
       this.recent_price_pos.x,
       this.recent_price_pos.y,
       this.recent_price_pos.w,
       this.recent_price_pos.h,
       "0123456789.",
-      `rprice${String(itemName).split(/\s/).join("")}`
+      `rprice${String(itemName).split(/\s/).join("")}`,
+      "digits"
     );
     const lowPriceText = await this.ocr(
       this.lowest_price_pos.x,
@@ -113,7 +113,8 @@ export default class AuctionExtractor {
       this.lowest_price_pos.w,
       this.lowest_price_pos.h,
       "0123456789.",
-      `lprice${String(itemName).split(/\s/).join("")}`
+      `lprice${String(itemName).split(/\s/).join("")}`,
+      "digits"
     );
     let price = priceText.length > 0 ? Number(priceText.trim()) : false;
     let lowPrice =
@@ -129,7 +130,8 @@ export default class AuctionExtractor {
           this.BUNDLE_POS.y,
           288,
           17,
-          " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789."
+          " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789.",
+          "eng"
         )
       ).split(" ");
       for (let i = 0; i < bundleText.length; i++) {
