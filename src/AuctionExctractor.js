@@ -22,11 +22,14 @@ export default class AuctionExtractor {
   _worker;
   constructor() {
     this._worker = createWorker({
+      langPath: "./src/tessdata",
+      gzip: false,
       logger: (m) => {
         console.log(m);
       },
     });
     this._worker.load();
+    this._worker.loadLanguage("eng+digits_comma");
   }
 
   async start(interest_list) {
@@ -67,13 +70,15 @@ export default class AuctionExtractor {
     // const ogBuffer = await captureImage(x, y, width, height, debug_name);
     const img = await _captureImage(x, y, width, height, debug_name);
     //console.log(ogBuffer, imgBuffer);
+    await this._worker.initialize(String(lang));
     await this._worker.setParameters({
       tessedit_char_whitelist: charset,
     });
     const {
       data: { text },
-    } = await this._worker.recognize(await img.toBuffer(),);
-    return text ?? "";
+    } = await this._worker.recognize(img);
+    
+    return isNaN(text) ? "" : text;
   }
 
   async getPrice(itemName) {
@@ -105,7 +110,7 @@ export default class AuctionExtractor {
       this.recent_price_pos.h,
       "0123456789.",
       `rprice${String(itemName).split(/\s/).join("")}`,
-      "digits"
+      "digits_comma"
     );
     const lowPriceText = await this.ocr(
       this.lowest_price_pos.x,
@@ -114,7 +119,7 @@ export default class AuctionExtractor {
       this.lowest_price_pos.h,
       "0123456789.",
       `lprice${String(itemName).split(/\s/).join("")}`,
-      "digits"
+      "digits_comma"
     );
     let price = priceText.length > 0 ? Number(priceText.trim()) : false;
     let lowPrice =

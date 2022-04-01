@@ -60,7 +60,7 @@ export async function _captureImage(x, y, width, height, ID) {
     .withMetadata({ density: 150 })
     .png()
     .toFile(`.image_dump/${ID}.png`);
-  return sharpImg;
+  return await sharpImg.toBuffer();
 }
 
 export function captureImage(x, y, width, height, ID) {
