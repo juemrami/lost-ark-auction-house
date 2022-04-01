@@ -1,8 +1,8 @@
 # Auction house
 
-Goal of this project it to extract all prices for all recipes from Lost ark auction house, and find the best recipes to flip, or make yourself.
+This is a fork i created for the specific use case of tracking auction price data on honing materials.
 
-
+*remove*
 ## Scrape recipe data
 ```
 yarn scrape
@@ -25,5 +25,5 @@ yarn start
 
 
 ## To do
-- Use a reference point to calculate the OCR positions, so it isnt resolution bound.
-- Get better recipe data
+Re query for failed searches
+use in-game interest list instead of passed list of strings
