@@ -9,7 +9,7 @@ export async function main() {
   const recent_price_pos = { x: 1133, y: 322, w: 69, h: 20 };
   const alt_img = "./src/image_dump/rpriceDestructionStoneCrystal.png";
   const img_path = "./src/image_dump/lpriceGuardianStoneCrystal.png";
-  
+
   const img = await captureImage(
     recent_price_pos.x,
     recent_price_pos.y,
@@ -52,7 +52,7 @@ export async function captureImage(x, y, width, height, filename) {
     .toFile(`./src/image_dump/${filename}.png`);
   return await sharpImg.toBuffer();
 }
-async function parse_img(imageBuffer, lang, whitelist = null) {
+export async function parse_img(imageBuffer, lang, whitelist = null) {
   //spawn a worker and set up logging (for debugging)
   let tess_worker = createWorker({
     // logger: (m) => console.log(m),
@@ -72,7 +72,7 @@ async function parse_img(imageBuffer, lang, whitelist = null) {
   } = await tess_worker.recognize(imageBuffer);
   await tess_worker.terminate();
   console.log(`ocr results: ${text}`);
-  return isNaN(text) ? "" : text;
+  return isNaN(text) ? false : text;
 }
 export function wait(ms) {
   return new Promise((r) => setTimeout(r, ms));

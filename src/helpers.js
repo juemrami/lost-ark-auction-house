@@ -32,7 +32,7 @@ export function generatePriceConfig(data) {
   });
   return out;
 }
-export async function _captureImage(x, y, width, height, filename) {
+export async function captureImage(x, y, width, height, filename) {
   const channels = 4;
   const {
     image,
@@ -52,15 +52,16 @@ export async function _captureImage(x, y, width, height, filename) {
     [0, 1, 0],
     [1, 0, 0],
   ]);
-  sharpImg
+  await sharpImg
     .flatten()
-    .resize(width * 4, height * 4, { kernel: "lanczos3" })
+    .threshold(128)
+    .resize(width * 4, height * 4, { kernel: "mitchell" })
+    .negate({ alpha: false })
     .withMetadata({ density: 150 })
     .png();
   if (filename) {
-    await sharpImg.toFile(`.image_dump/${filename}.png`);
+    await sharpImg.toFile(`./src/image_dump/${filename}.png`);
   }
-
   return await sharpImg.toBuffer();
 }
 export function wait(ms) {
