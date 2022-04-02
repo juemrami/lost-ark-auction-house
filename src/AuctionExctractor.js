@@ -2,8 +2,9 @@ import robot from "robotjs";
 import clipboard from "clipboardy";
 
 import { createWorker } from "tesseract.js";
-import { captureImage, wait } from "./helpers.js";
-import { parse_img } from "./test.js";
+import { wait } from "./helpers.js";
+// import { parse_img } from "./test.js";
+import { captureImage } from "./test.js";
 
 export default class AuctionExtractor {
   SEARCH_POS = { x: 1551, y: 243 };
@@ -18,7 +19,7 @@ export default class AuctionExtractor {
     w: 69,
   };
 
-  LOADING_COLOR = "101114";
+  LOADING_COLOR = "111215";
 
   _worker;
   //spawn a worker and set up logging (for debugging)
@@ -26,13 +27,13 @@ export default class AuctionExtractor {
     this._worker = createWorker({
       // logger: m => console.log(m),
     });
-    this._worker.load();
-    this._worker.loadLanguage("eng+digits_comma");
   }
 
   async start(interest_list) {
     let market_prices = {};
     let prices_missing = false;
+    await this._worker.load();
+    await this._worker.loadLanguage("eng+digits_comma");
     console.log("Prices\n----------------");
     for (const item_name of interest_list) {
       market_prices[item_name] = await this.get_price_data(item_name);
@@ -52,29 +53,37 @@ export default class AuctionExtractor {
             console.log("price missing for ", item_name, "...refetching.");
             const item_data = await this.get_price_data(item_name);
             market_prices[item_name] = item_data;
-            console.log(item_name, ":", market_prices[item_name]);
+            // console.log(item_name, ":", market_prices[item_name]);
           } while (market_prices[item_name].price == false);
         }
       }
     }
+    await this._worker.terminate();
     return market_prices;
   }
 
-  // async parse_img(imageBuffer, lang, whitelist = null) {
-  //   //worker required setup
-  //   //https://github.com/naptha/tesseract.js/blob/master/docs/api.md#create-worker
-  //   await this._worker.initialize(lang);
-  //   if (whitelist)
-  //     await this._worker.setParameters({
-  //       tessedit_char_whitelist: whitelist,
-  //     });
-  //   const {
-  //     data: { text },
-  //   } = await this._worker.recognize(imageBuffer);
-  //   await this._worker.terminate();
-  //   console.log(`ocr results: ${text}`);
-  //   return isNaN(text) ? "" : text;
-  // }
+  async parse_img(imageBuffer, lang, whitelist = null) {
+    //worker required setup
+    //https://github.com/naptha/tesseract.js/blob/master/docs/api.md#create-worker
+    await this._worker.initialize(lang);
+    if (whitelist)
+      await this._worker.setParameters({
+        tessedit_char_whitelist: whitelist,
+      });
+    let {
+      data: { text },
+    } = await this._worker.recognize(imageBuffer);
+    // console.log(`ocr results: ${text}`);
+    if (/unit/.test(text)) {
+      return text;
+    } else if (/\.\d{3,}/.test(text)) {
+      text = text.replace(/\./, "");
+      return isNaN(text) ? false : text;
+    } else {
+      text = text.replace(/\s/g, "");
+      return isNaN(text) ? false : text;
+    }
+  }
   async get_price_data(itemName) {
     await clipboard.write(itemName);
     await wait(250);
@@ -87,9 +96,21 @@ export default class AuctionExtractor {
     robot.keyTap("v", "control");
 
     robot.keyTap("enter");
+    /** baba01
+        cccc01
+        f39300
+    */
 
+    //999 785 -> coords for "no result text"
     // Wait for search results
-    await wait(1000);
+    // console.log(robot.getPixelColor(999, 785));
+    await wait(500);
+    //console.log(robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y));
+    if (robot.getPixelColor(999, 785) == "cccc01") {
+      console.log("yellow");
+      get_price_data(itemName);
+    }
+    // console.log(robot.getPixelColor(999, 785));
     while (
       robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y) ===
       this.LOADING_COLOR
@@ -110,38 +131,38 @@ export default class AuctionExtractor {
       this.lowest_price_pos.h,
       `lowest_price_${String(itemName).split(/\s/).join("")}`
     );
-    let recent_price = await parse_img(price_img, "digits_comma");
-    let lowest_price = await parse_img(low_price_img, "digits_comma");
+    let recent_price = await this.parse_img(price_img, "digits_comma");
+    let lowest_price = await this.parse_img(low_price_img, "digits_comma");
     let price = Number(recent_price.trim()) || false;
     let lowPrice = Number(lowest_price.trim()) || false;
     let unitSize = 1;
     let time = Date();
 
-    // if (price) {
-    //   // Adjust price if sold in bundles
-    //   const bundle_text = (
-    //     await this.parse_img(
-    //       await captureImage(
-    //         this.BUNDLE_POS.x,
-    //         this.BUNDLE_POS.y,
-    //         288,
-    //         17,
-    //         `bundle_${String(itemName).split(/\s/).join("")}`
-    //       ),
-    //       "eng",
-    //       " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789."
-    //     )
-    //   ).split(" ");
-    //   for (let i = 0; i < bundle_text_img.length; i++) {
-    //     const word = bundle_text_img[i];
-    //     if (word.toLowerCase().includes("units")) {
-    //       unitSize = Number(bundle_text_img[i - 1].trim());
-    //       price = price / unitSize;
-    //       lowPrice = lowPrice / unitSize;
-    //       break;
-    //     }
-    //   }
-    // }
+    if (price) {
+      // Adjust price if sold in bundles
+      const bundle_text = String(
+        await this.parse_img(
+          await captureImage(
+            this.BUNDLE_POS.x,
+            this.BUNDLE_POS.y,
+            288,
+            17,
+            `bundle_${String(itemName).split(/\s/).join("")}`
+          ),
+          "eng",
+          " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789."
+        )
+      ).split(" ");
+      for (let i = 0; i < bundle_text.length; i++) {
+        const word = bundle_text[i];
+        if (word.toLowerCase().includes("units")) {
+          unitSize = Number(bundle_text[i - 1].trim());
+          price = price / unitSize;
+          lowPrice = lowPrice / unitSize;
+          break;
+        }
+      }
+    }
     return {
       price,
       lowPrice,
