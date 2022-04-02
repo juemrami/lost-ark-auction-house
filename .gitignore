@@ -111,3 +111,4 @@ dist
 ./src/data/*.json
 .image_dump/
 .vscode/
+tessdata_shreetest-master.zip

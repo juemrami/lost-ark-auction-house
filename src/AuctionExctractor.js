@@ -2,7 +2,7 @@ import robot from "robotjs";
 import clipboard from "clipboardy";
 
 import { createWorker } from "tesseract.js";
-import { captureImage, _captureImage, wait } from "./helpers.js";
+import { _captureImage, wait } from "./helpers.js";
 
 export default class AuctionExtractor {
   SEARCH_POS = { x: 1551, y: 243 };
@@ -22,11 +22,7 @@ export default class AuctionExtractor {
   _worker;
   constructor() {
     this._worker = createWorker({
-      langPath: "./src/tessdata",
-      gzip: false,
-      logger: (m) => {
-        console.log(m);
-      },
+      // logger: m => console.log(m),
     });
     this._worker.load();
     this._worker.loadLanguage("eng+digits_comma");
@@ -66,18 +62,17 @@ export default class AuctionExtractor {
     return market_prices;
   }
 
-  async ocr(x, y, width, height, charset, debug_name = false, lang) {
-    // const ogBuffer = await captureImage(x, y, width, height, debug_name);
-    const img = await _captureImage(x, y, width, height, debug_name);
-    //console.log(ogBuffer, imgBuffer);
+  async ocr(x, y, width, height, lang, charset = null, filename = null) {
+    const img = await _captureImage(x, y, width, height, filename);
     await this._worker.initialize(String(lang));
-    await this._worker.setParameters({
-      tessedit_char_whitelist: charset,
-    });
+    if (charset)
+      await this._worker.setParameters({
+        tessedit_char_whitelist: charset,
+      });
     const {
       data: { text },
     } = await this._worker.recognize(img);
-    
+
     return isNaN(text) ? "" : text;
   }
 
@@ -108,18 +103,18 @@ export default class AuctionExtractor {
       this.recent_price_pos.y,
       this.recent_price_pos.w,
       this.recent_price_pos.h,
-      "0123456789.",
-      `rprice${String(itemName).split(/\s/).join("")}`,
-      "digits_comma"
+      "digits_comma",
+      null,
+      `rprice${String(itemName).split(/\s/).join("")}`
     );
     const lowPriceText = await this.ocr(
       this.lowest_price_pos.x,
       this.lowest_price_pos.y,
       this.lowest_price_pos.w,
       this.lowest_price_pos.h,
-      "0123456789.",
-      `lprice${String(itemName).split(/\s/).join("")}`,
-      "digits_comma"
+      "digits_comma",
+      null,
+      `lprice${String(itemName).split(/\s/).join("")}`
     );
     let price = priceText.length > 0 ? Number(priceText.trim()) : false;
     let lowPrice =
@@ -135,8 +130,8 @@ export default class AuctionExtractor {
           this.BUNDLE_POS.y,
           288,
           17,
-          " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789.",
-          "eng"
+          "eng",
+          " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]0123456789."
         )
       ).split(" ");
       for (let i = 0; i < bundleText.length; i++) {

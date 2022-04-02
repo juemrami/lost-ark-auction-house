@@ -32,14 +32,12 @@ export function generatePriceConfig(data) {
   });
   return out;
 }
-export async function _captureImage(x, y, width, height, ID) {
+export async function _captureImage(x, y, width, height, filename) {
   const channels = 4;
   const {
     image,
     width: cWidth,
     height: cHeight,
-    bytesPerPixel,
-    byteWidth,
   } = robot.screen.capture(x, y, width, height);
   const img_buffer = Buffer.from(image);
   const sharpImg = sharp(img_buffer, {
@@ -54,52 +52,17 @@ export async function _captureImage(x, y, width, height, ID) {
     [0, 1, 0],
     [1, 0, 0],
   ]);
-  await sharpImg
+  sharpImg
     .flatten()
     .resize(width * 4, height * 4, { kernel: "lanczos3" })
     .withMetadata({ density: 150 })
-    .png()
-    .toFile(`.image_dump/${ID}.png`);
+    .png();
+  if (filename) {
+    await sharpImg.toFile(`.image_dump/${filename}.png`);
+  }
+
   return await sharpImg.toBuffer();
 }
-
-export function captureImage(x, y, width, height, ID) {
-  const raw_img = robot.screen.capture(x, y, width, height);
-  //const _width = (raw_img.byteWidth) / raw_img.bytesPerPixel; // raw_img.width is sometimes wrong!
-  //const _height = raw_img.height;
-  const j_img = new Jimp(width, height);
-
-  const image = new Jimp(width, height);
-
-  let red, green, blue;
-  let LIMIT = 100;
-  raw_img.image.forEach((byte, i) => {
-    switch (i % 4) {
-      case 0:
-        return (blue = byte);
-      case 1:
-        return (green = byte);
-      case 2:
-        return (red = byte);
-      case 3:
-        if (red >= LIMIT || green >= LIMIT || blue >= LIMIT) {
-          image.bitmap.data[i - 3] = 255;
-          image.bitmap.data[i - 2] = 255;
-          image.bitmap.data[i - 1] = 255;
-        } else {
-          image.bitmap.data[i - 3] = 0;
-          image.bitmap.data[i - 2] = 0;
-          image.bitmap.data[i - 1] = 0;
-        }
-        image.bitmap.data[i] = 255;
-    }
-  });
-  if (ID) {
-    image.writeAsync(`.image_dump/DEBUG-${ID}.png`);
-  }
-  return image.getBufferAsync(Jimp.MIME_PNG);
-}
-
 export function wait(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
