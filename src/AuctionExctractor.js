@@ -3,7 +3,7 @@ import clipboard from "clipboardy";
 
 import { createWorker } from "tesseract.js";
 import { wait } from "./helpers.js";
-// import { parse_img } from "./test.js";
+
 import { captureImage } from "./test.js";
 
 export default class AuctionExtractor {
@@ -30,6 +30,8 @@ export default class AuctionExtractor {
   }
 
   async start(interest_list) {
+    await this._worker.terminate();
+    
     let market_prices = {};
     let prices_missing = false;
     await this._worker.load();
@@ -45,7 +47,7 @@ export default class AuctionExtractor {
       }
       console.log(item_name, ":", market_prices[item_name]);
     }
-
+    
     if (prices_missing) {
       for (const item_name of interest_list) {
         if (market_prices[item_name].price == false) {
@@ -85,38 +87,38 @@ export default class AuctionExtractor {
     }
   }
   async get_price_data(itemName) {
+    //999 785 -> coords for "no result text"
+
     await clipboard.write(itemName);
     await wait(250);
     // To search bar and search
     robot.moveMouseSmooth(this.SEARCH_POS.x, this.SEARCH_POS.y);
     robot.mouseClick();
-
+    // paste the search term
     robot.moveMouseSmooth(this.SEARCH_POS.x - 50, this.SEARCH_POS.y);
     robot.mouseClick();
     robot.keyTap("v", "control");
-
+    // start searching
     robot.keyTap("enter");
-    /** baba01
-        cccc01
-        f39300
-    */
 
-    //999 785 -> coords for "no result text"
     // Wait for search results
-    // console.log(robot.getPixelColor(999, 785));
     await wait(500);
-    //console.log(robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y));
+
     if (robot.getPixelColor(999, 785) == "cccc01") {
       console.log("yellow");
       get_price_data(itemName);
     }
-    // console.log(robot.getPixelColor(999, 785));
+    
+    // after 500ms check to see if search is finished
     while (
       robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y) ===
       this.LOADING_COLOR
     ) {
+      //if not wait an extra .25 sec
       await wait(250);
     }
+
+    // grab a screenshot of the results
     const price_img = await captureImage(
       this.recent_price_pos.x,
       this.recent_price_pos.y,

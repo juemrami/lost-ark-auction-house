@@ -5,11 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node src/test.js",
     "start": "node src/index.js",
     "start-brk": "node --inspect-brk src/index.js",
     "ocr": "node src/auctionHouse.js",
-    "test": "node src/test.js",
     "scrape": "node src/recipeScraper.js",
     "start:watch": "nodemon src/index.js"
   },
@@ -25,6 +24,7 @@
   "homepage": "https://github.com/Clonex/lost-ark-calculator#readme",
   "dependencies": {
     "clipboardy": "^3.0.0",
+    "core-js": "^3.21.1",
     "jimp": "^0.16.1",
     "jsdom": "^19.0.0",
     "node-fetch": "^3.2.0",
@@ -33,6 +33,7 @@
     "tesseract.js": "^2.1.5"
   },
   "devDependencies": {
+    "@types/sharp": "^0.30.0",
     "nodemon": "^2.0.15"
   }
 }
