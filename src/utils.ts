@@ -1,28 +1,39 @@
-import { wait } from "./helpers";
+import { wait } from "./helpers.js";
 import robot from "robotjs";
+import { range } from "d3-array";
+const {
+  moveMouse,
+  mouseClick,
+  keyTap,
+  getPixelColor,
+  moveMouseSmooth,
+  screen,
+} = robot;
 import sharp from "sharp";
-import { createWorker } from "tesseract.js";
+import { createWorker, createScheduler } from "tesseract.js";
 
 import clipboard from "clipboardy";
+const SEARCH_BOX = { x: 1551, y: 243 };
+const LOADING_BOX = { x: 1060, y: 447, color: "111215" };
 const SEARCH_RESULT_BOX = {
   LOC: {
     // pixel
     x: 520,
     y: 304,
     // length
-    width: 1633 - 304,
-    height: 520 - 360,
+    width: 1633 - 520,
+    height: 360 - 304,
   },
   // coordinates relative to the search result box canvas
   // (see dimensions above)
   RECENT_PRICE: {
-    x: 609,
+    x: 610,
     y: 18,
     width: 69,
     height: 20,
   },
   LOWEST_PRICE: {
-    x: 769,
+    x: 770,
     y: 18,
     width: 69,
     height: 20,
@@ -54,18 +65,25 @@ const SEARCH_RESULT_BOX = {
 };
 
 const results: any = {};
-main();
-let ocr_worker = createWorker({
-  // logger: (m) => console.log(m),
-});
 
+// test();
+main();
+
+// async function test() {
+//   await ocr_worker.load();
+//   await ocr_worker.loadLanguage("eng+digits_comma+equ");
+//   await parseImage(undefined, "digits_comma", SEARCH_RESULT_BOX.RECENT_PRICE);
+//   await ocr_worker.terminate();
+// }
 async function main() {
   //worker required setup
   //https://github.com/naptha/tesseract.js/blob/master/docs/api.md#create-worker
-  await ocr_worker.load();
-  await ocr_worker.loadLanguage("eng+digits_comma+equ");
 
-  const items = ["Big Rock", "Little Rock", "Sharded Rock"];
+  const items = ["Guardian Stone Crystal", "Life Shard Pouch (S)"];
+  console.log("Starting auction house scrape..");
+  console.log("you have 2 seconds to focus your Lost Ark game window.");
+  await wait(2000);
+  console.log("...commencing. dont touch mouse!");
 
   for (const item_name of items) {
     await searchMarket(item_name);
@@ -73,24 +91,43 @@ async function main() {
       SEARCH_RESULT_BOX.LOC,
       String(item_name)
     );
-    results[item_name] = extractPrices(item_image);
+    const temp = item_image;
+    results[item_name] = extractPrices(temp);
   }
-  for await (const item of results) {}
-  
-  await ocr_worker.terminate();
+  console.log("out of loop");
   console.log(results);
-}
-async function parseImage(image_buffer: Buffer, lang) {
+  await Promise.all(Object.values(results));
+  console.log("done await");
 
-  await ocr_worker.initialize(lang);
+  console.log(results.then());
+}
+//
+//needs new arg to support box region
+async function parseImage(image_buffer, worker, lang, dim?: any) {
+  // crop and zoom and flatten
+  const sharp_img = sharp(image_buffer)
+    .extract({ left: dim.x, top: dim.y, width: dim.width, height: dim.height })
+    .png()
+    .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
+  await sharp_img;
+  // just pass location
+
+  await worker.initialize(lang);
   // if (false)
   //   await tess_worker.setParameters({
   //     tessedit_char_whitelist: whitelist,
   //   });
   let {
     data: { text },
-  } = await ocr_worker.recognize(image_buffer);
-  console.log(`ocr results: ${text}`);
+  } = await worker.recognize(image_buffer, {
+    rectangle: {
+      left: dim.x,
+      top: dim.y,
+      width: dim.width,
+      height: dim.height,
+    },
+  });
+  console.log(`ocr results: ${text.trim()}`);
   // console.log(text.replace(/\s/g, ""));
   // console.log(/\.\d{3,}/.test(text));
   if (/unit/.test(text)) {
@@ -103,10 +140,46 @@ async function parseImage(image_buffer: Buffer, lang) {
     return isNaN(Number(text)) ? "" : text;
   }
 }
+
 async function extractPrices(image_buffer: Buffer) {
-  let recent = parseImage(image_buffer, "digits_comma");
-  const lowest = parseImage(image_buffer, "digits_comma");
-  if ((await recent).length == 0 || (await lowest).length == 0) {
+  const ocr_scheduler = createScheduler();
+  const workers = [];
+  for (const i in range(3)) {
+    workers.push(createWorker());
+  }
+  for (let worker of workers) {
+    await worker.load();
+    worker.loadLanguage("eng+digits_comma");
+    // await ocr_worker.initialize("eng+digits_comma");
+    // ocr_scheduler.addWorker(ocr_worker);
+  }
+  await Promise.all(workers);
+  // const data = await ocr_scheduler.addJob("recognize", image_buffer, {
+  //   rectangle: {
+  //     left: SEARCH_RESULT_BOX.RECENT_PRICE.x,
+  //     top: SEARCH_RESULT_BOX.RECENT_PRICE.y,
+  //     width: SEARCH_RESULT_BOX.RECENT_PRICE.width,
+  //     height: SEARCH_RESULT_BOX.RECENT_PRICE.height,
+  //   },
+  // });
+  // console.log(data);
+  let getRecent = parseImage(
+    image_buffer,
+    workers[0],
+    "digits_comma",
+    SEARCH_RESULT_BOX.RECENT_PRICE
+  );
+  const getLowest = parseImage(
+    image_buffer,
+    workers[1],
+    "digits_comma",
+    SEARCH_RESULT_BOX.LOWEST_PRICE
+  );
+
+  let recent = await getRecent;
+  let lowest = await getLowest;
+  console.log(recent, lowest);
+  if (recent.length == 0 || lowest.length == 0) {
     return {
       price: false,
       lowPrice: false,
@@ -115,8 +188,15 @@ async function extractPrices(image_buffer: Buffer) {
     };
   }
   let time = Date();
-  const bundle = await parseImage(image_buffer, "digits_comma");
+  const bundle = await parseImage(
+    image_buffer,
+    workers[2],
+    "eng",
+    SEARCH_RESULT_BOX.BUNDLE_SIZE
+  );
+  ocr_scheduler.terminate();
   let unitSize = 1;
+  debugger;
   let lowPrice = Number(lowest);
   let price = Number(recent);
   if (bundle.length > 0) {
@@ -141,32 +221,27 @@ async function searchMarket(item_name: string) {
   await clipboard.write(item_name);
   await wait(250);
   // To search bar and search
-  robot.moveMouse(this.SEARCH_POS.x, this.SEARCH_POS.y);
-  robot.mouseClick();
+  moveMouseSmooth(SEARCH_BOX.x, SEARCH_BOX.y);
+  mouseClick();
   // paste the search term
-  robot.moveMouse(this.SEARCH_POS.x - 50, this.SEARCH_POS.y);
-  robot.mouseClick();
-  robot.keyTap("v", "control");
+  moveMouseSmooth(SEARCH_BOX.x - 50, SEARCH_BOX.y);
+  mouseClick();
+  keyTap("v", "control");
   // start searching
-  robot.keyTap("enter");
-
+  keyTap("enter");
   // Wait for search results
   await wait(500);
 
-  if (robot.getPixelColor(999, 785) == "cccc01") {
+  if (getPixelColor(999, 785) == "cccc01") {
     console.log("yellow");
     // getPriceData(item_name);
   }
-
   // after 500ms check to see if search is finished
-  while (
-    robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y) ===
-    this.LOADING_COLOR
-  ) {
+  while (getPixelColor(LOADING_BOX.x, LOADING_BOX.y) === LOADING_BOX.color) {
     //if not wait an extra .25 sec
     await wait(250);
   }
-  return  
+  return;
 }
 async function captureImage(
   dim: { x: number; y: number; width: number; height: number },
@@ -177,28 +252,33 @@ async function captureImage(
     image,
     width: cWidth,
     height: cHeight,
-  } = robot.screen.capture(dim.x, dim.y, dim.width, dim.height);
-  const img_buffer = sharp(Buffer.from(image), {
-    density: 72,
+  } = screen.capture(dim.x, dim.y, dim.width, dim.height);
+  let img_buffer = sharp(Buffer.from(image), {
     raw: {
       width: cWidth,
       height: cHeight,
       channels,
     },
-  }).recomb([
-    [0, 0, 1],
-    [0, 1, 0],
-    [1, 0, 0],
-  ]).toBuffer();
+  })
+    .recomb([
+      [0, 0, 1],
+      [0, 1, 0],
+      [1, 0, 0],
+    ])
+    .flatten()
+    .negate({ alpha: false })
+    .toColorspace("b-w")
+    .withMetadata({ density: 150 })
+    .png();
+
+  if (filename) {
+    img_buffer.toFile(`./temp/image_dump/${filename}.png`);
+  }
+  let temp = await img_buffer.toBuffer();
   // return image before resizing,
   // sharpImg
-  //   .flatten()
-  //   .negate({ alpha: false })
-  //   .toColorspace("b-w")
-  //   .withMetadata({ density: 150 })
-  //  .png();
   // .toFile(`./src/image_dump/${filename}.png`);
   // .resize(dim.width * 4, dim.height * 4, { kernel: "mitchell" })
   // .threshold(184)
-  return await img_buffer;
+  return temp;
 }

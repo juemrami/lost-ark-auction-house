@@ -30,8 +30,7 @@ export default class AuctionExtractor {
   }
 
   async start(interest_list) {
-    await this._worker.terminate();
-    
+    //
     let market_prices = {};
     let prices_missing = false;
     await this._worker.load();
@@ -47,7 +46,7 @@ export default class AuctionExtractor {
       }
       console.log(item_name, ":", market_prices[item_name]);
     }
-    
+
     if (prices_missing) {
       for (const item_name of interest_list) {
         if (market_prices[item_name].price == false) {
@@ -108,7 +107,7 @@ export default class AuctionExtractor {
       console.log("yellow");
       get_price_data(itemName);
     }
-    
+
     // after 500ms check to see if search is finished
     while (
       robot.getPixelColor(this.LOADING_POS.x, this.LOADING_POS.y) ===

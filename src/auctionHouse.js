@@ -13,6 +13,7 @@ if (recipes) {
     "Solar Grace",
     "Solar Blessing",
     "Solar Protection",
+    "Life Shard Pouch (S)",
   ];
   console.log("Starting auction house scrape..");
   console.log("you have 2 seconds to focus your Lost Ark game window.");
