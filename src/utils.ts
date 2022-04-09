@@ -2,7 +2,10 @@ import { wait } from "./helpers.js";
 import robot from "robotjs";
 import { range } from "d3-array";
 import { writeFileSync } from "fs";
-import * as log from "why-is-node-running";
+import sharp from "sharp";
+import { createWorker, createScheduler } from "tesseract.js";
+import clipboard from "clipboardy";
+
 const {
   moveMouse,
   mouseClick,
@@ -11,10 +14,6 @@ const {
   moveMouseSmooth,
   screen,
 } = robot;
-import sharp from "sharp";
-import { createWorker, createScheduler } from "tesseract.js";
-
-import clipboard from "clipboardy";
 const SEARCH_BOX = { x: 1551, y: 243 };
 const LOADING_BOX = { x: 1060, y: 447, color: "111215" };
 const SEARCH_RESULT_BOX = {
@@ -67,14 +66,9 @@ const SEARCH_RESULT_BOX = {
 };
 
 const results: any = {};
-
-// test();
 main();
 
 async function main() {
-  //worker required setup
-  //https://github.com/naptha/tesseract.js/blob/master/docs/api.md#create-worker
-
   const items = [
     "Guardian Stone Crystal",
     "Destruction Stone Crystal",
@@ -86,32 +80,31 @@ async function main() {
     "Solar Protection",
     "Life Shard Pouch (S)",
   ];
+
   console.log("Starting auction house scrape..");
   console.log("you have 2 seconds to focus your Lost Ark game window.");
   await wait(2000);
   console.log("...commencing. dont touch mouse!");
+
   for (const item_name of items) {
     await searchMarket(item_name);
     const item_image = await captureImage(
-      SEARCH_RESULT_BOX.LOC,
-      String(item_name)
+      SEARCH_RESULT_BOX.LOC
+      // item_name // uncomment for image saving
     );
-    const temp = item_image;
-    results[item_name] = extractPrices(temp);
+    results[item_name] = extractPrices(item_image);
   }
-  console.log("out of loop");
-  console.log(results);
   for (const item_name of items) {
     results[item_name] = await results[item_name];
     while (!results[item_name]) {
       console.log("price missing for ", item_name, "...refetching.");
       await searchMarket(item_name);
       results[item_name] = await extractPrices(
-        await captureImage(SEARCH_RESULT_BOX.LOC, String(item_name))
+        await captureImage(SEARCH_RESULT_BOX.LOC)
       );
     }
   }
-  console.log("done await");
+  console.log("done");
   console.log(results);
   writeFileSync(
     process.cwd() + "\\src\\data\\prices2.json",
@@ -119,21 +112,17 @@ async function main() {
   );
   process.exit();
 }
-//needs new arg to support box region
 async function parseImage(image_buffer, worker, lang, dim?: any) {
-  // crop and zoom and flatten
-  const sharp_img = sharp(image_buffer)
-    .extract({ left: dim.x, top: dim.y, width: dim.width, height: dim.height })
-    .png()
-    .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
-  await sharp_img;
-  // just pass location
-
+  { // crop and zoom and flatten if needed for better resolution
+    // const image_buffer = sharp(image_buffer)
+    //   .extract({ left: dim.x, top: dim.y, width: dim.width, height: dim.height })
+    //   .resize(dim.width * 4, dim.height * 4, { kernel: "mitchell" })
+    //   .threshold(184)
+    //   .png()
+    //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
+    // await image_buffer.toBuffer();
+  }
   await worker.initialize(lang);
-  // if (false)
-  //   await tess_worker.setParameters({
-  //     tessedit_char_whitelist: whitelist,
-  //   });
   let {
     data: { text },
   } = await worker.recognize(image_buffer, {
@@ -160,70 +149,63 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
 
 async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
-  const workers = [];
+  const worker_pool = [];
   for (const i in range(3)) {
-    workers.push(createWorker());
+    worker_pool.push(createWorker());
   }
-  for (let worker of workers) {
+  for (const worker of worker_pool) {
     await worker.load();
     await worker.loadLanguage("eng+digits_comma");
-    // await ocr_worker.initialize("eng+digits_comma");
-    // ocr_scheduler.addWorker(ocr_worker);
   }
-  // const data = await ocr_scheduler.addJob("recognize", image_buffer, {
-  //   rectangle: {
-  //     left: SEARCH_RESULT_BOX.RECENT_PRICE.x,
-  //     top: SEARCH_RESULT_BOX.RECENT_PRICE.y,
-  //     width: SEARCH_RESULT_BOX.RECENT_PRICE.width,
-  //     height: SEARCH_RESULT_BOX.RECENT_PRICE.height,
-  //   },
-  // });
-  // console.log(data);
-  let getRecent = parseImage(
+  const getRecent = parseImage(
     image_buffer,
-    workers[0],
+    worker_pool[0],
     "digits_comma",
     SEARCH_RESULT_BOX.RECENT_PRICE
   );
   const getLowest = parseImage(
     image_buffer,
-    workers[1],
+    worker_pool[1],
     "digits_comma",
     SEARCH_RESULT_BOX.LOWEST_PRICE
   );
-
+  const getBundle = parseImage(
+    image_buffer,
+    worker_pool[2],
+    "eng",
+    SEARCH_RESULT_BOX.BUNDLE_SIZE
+  );
   let recent = await getRecent;
   let lowest = await getLowest;
-  console.log(recent, lowest);
+  let bundle = await getBundle;
+  // console.log(recent, lowest);
   if (recent.length == 0 || lowest.length == 0) {
     return undefined;
   }
   let time = Date();
-  const bundle = await parseImage(
-    image_buffer,
-    workers[2],
-    "eng",
-    SEARCH_RESULT_BOX.BUNDLE_SIZE
-  );
   ocr_scheduler.terminate();
-  let unitSize = 1;
-  let lowPrice = Number(lowest);
-  let price = Number(recent);
+  let bundle_size = 1;
+  let lowest_price = Number(lowest);
+  let recent_price = Number(recent);
+
+  // implement this better.
+  // or remove and hardcode bundle sizes
   if (bundle.length > 0) {
     const bundle_text = bundle.split(" ");
     for (let i = 0; i < bundle_text.length; i++) {
       const word = bundle_text[i];
       if (word.toLowerCase().includes("units")) {
-        unitSize = Number(bundle_text[i - 1].trim());
-        lowPrice = lowPrice / unitSize;
-        price = price / unitSize;
+        bundle_size = Number(bundle_text[i - 1].trim());
+        lowest_price = lowest_price / bundle_size;
+        recent_price = recent_price / bundle_size;
       }
     }
   }
+
   return {
-    price,
-    lowPrice,
-    unitSize,
+    price: recent_price,
+    lowPrice: lowest_price,
+    unitSize: bundle_size,
     time,
   };
 }
@@ -244,7 +226,6 @@ async function searchMarket(item_name: string) {
 
   if (getPixelColor(999, 785) == "cccc01") {
     console.log("yellow");
-    // getPriceData(item_name);
   }
   // after 500ms check to see if search is finished
   while (getPixelColor(LOADING_BOX.x, LOADING_BOX.y) === LOADING_BOX.color) {
@@ -284,11 +265,5 @@ async function captureImage(
   if (filename) {
     img_buffer.toFile(`./temp/image_dump/${filename}.png`);
   }
-  let temp = await img_buffer.toBuffer();
-  // return image before resizing,
-  // sharpImg
-  // .toFile(`./src/image_dump/${filename}.png`);
-  // .resize(dim.width * 4, dim.height * 4, { kernel: "mitchell" })
-  // .threshold(184)
-  return temp;
+  return await img_buffer.toBuffer();
 }
