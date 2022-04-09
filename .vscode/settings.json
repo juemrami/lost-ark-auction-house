@@ -10,8 +10,7 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true,
-    "node_modules": true,
     "tessdata_shreetest-master.zip": true
   },
-  "hide-files.files": ["node_modules", "tessdata_shreetest-master.zip"]
+  "hide-files.files": ["tessdata_shreetest-master.zip"]
 }

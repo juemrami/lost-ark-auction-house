@@ -1,6 +1,8 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// npx prisma migrate dev - does a migration to the db
+// npx prisma generate - generate a prisma client from db
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +10,22 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model item {
+  id            Int          @id @unique @default(autoincrement())
+  name          String
+  bundle_size   Int          @default(1)
+  price_history price_data[]
+}
+
+model price_data {
+  data_id       String    @id @default(cuid())
+  item          item      @relation(fields: [item_id], references: [id])
+  item_id       Int
+  avg_day_price Int?
+  recent_price  Int?
+  lowest_price  Int?
+  lowest_rem    Int?
+  date_time     DateTime?
 }

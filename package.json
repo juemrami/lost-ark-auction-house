@@ -14,6 +14,7 @@
     "dev": "ts-node ./src/utils.ts"
   },
   "dependencies": {
+    "@prisma/client": "^3.12.0",
     "clipboardy": "^3.0.0",
     "core-js": "^3.21.1",
     "d3": "^7.4.3",
@@ -33,7 +34,6 @@
     "@types/sharp": "^0.30.0",
     "nodemon": "^2.0.15",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.3",
-    "why-is-node-running": "^2.2.1"
+    "typescript": "^4.6.3"
   }
 }
