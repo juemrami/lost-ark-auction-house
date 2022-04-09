@@ -1,6 +1,8 @@
 import { wait } from "./helpers.js";
 import robot from "robotjs";
 import { range } from "d3-array";
+import { writeFileSync } from "fs";
+import * as log from "why-is-node-running";
 const {
   moveMouse,
   mouseClick,
@@ -69,22 +71,25 @@ const results: any = {};
 // test();
 main();
 
-// async function test() {
-//   await ocr_worker.load();
-//   await ocr_worker.loadLanguage("eng+digits_comma+equ");
-//   await parseImage(undefined, "digits_comma", SEARCH_RESULT_BOX.RECENT_PRICE);
-//   await ocr_worker.terminate();
-// }
 async function main() {
   //worker required setup
   //https://github.com/naptha/tesseract.js/blob/master/docs/api.md#create-worker
 
-  const items = ["Guardian Stone Crystal", "Life Shard Pouch (S)"];
+  const items = [
+    "Guardian Stone Crystal",
+    "Destruction Stone Crystal",
+    "Honor Leapstone",
+    "Honor Shard Pouch (S)",
+    "Great Honor Leapstone",
+    "Solar Grace",
+    "Solar Blessing",
+    "Solar Protection",
+    "Life Shard Pouch (S)",
+  ];
   console.log("Starting auction house scrape..");
   console.log("you have 2 seconds to focus your Lost Ark game window.");
   await wait(2000);
   console.log("...commencing. dont touch mouse!");
-
   for (const item_name of items) {
     await searchMarket(item_name);
     const item_image = await captureImage(
@@ -96,12 +101,24 @@ async function main() {
   }
   console.log("out of loop");
   console.log(results);
-  await Promise.all(Object.values(results));
+  for (const item_name of items) {
+    results[item_name] = await results[item_name];
+    while (!results[item_name]) {
+      console.log("price missing for ", item_name, "...refetching.");
+      await searchMarket(item_name);
+      results[item_name] = await extractPrices(
+        await captureImage(SEARCH_RESULT_BOX.LOC, String(item_name))
+      );
+    }
+  }
   console.log("done await");
-
-  console.log(results.then());
+  console.log(results);
+  writeFileSync(
+    process.cwd() + "\\src\\data\\prices2.json",
+    JSON.stringify(results)
+  );
+  process.exit();
 }
-//
 //needs new arg to support box region
 async function parseImage(image_buffer, worker, lang, dim?: any) {
   // crop and zoom and flatten
@@ -149,11 +166,10 @@ async function extractPrices(image_buffer: Buffer) {
   }
   for (let worker of workers) {
     await worker.load();
-    worker.loadLanguage("eng+digits_comma");
+    await worker.loadLanguage("eng+digits_comma");
     // await ocr_worker.initialize("eng+digits_comma");
     // ocr_scheduler.addWorker(ocr_worker);
   }
-  await Promise.all(workers);
   // const data = await ocr_scheduler.addJob("recognize", image_buffer, {
   //   rectangle: {
   //     left: SEARCH_RESULT_BOX.RECENT_PRICE.x,
@@ -180,12 +196,7 @@ async function extractPrices(image_buffer: Buffer) {
   let lowest = await getLowest;
   console.log(recent, lowest);
   if (recent.length == 0 || lowest.length == 0) {
-    return {
-      price: false,
-      lowPrice: false,
-      unitSize: 1,
-      time: "",
-    };
+    return undefined;
   }
   let time = Date();
   const bundle = await parseImage(
@@ -196,7 +207,6 @@ async function extractPrices(image_buffer: Buffer) {
   );
   ocr_scheduler.terminate();
   let unitSize = 1;
-  debugger;
   let lowPrice = Number(lowest);
   let price = Number(recent);
   if (bundle.length > 0) {
