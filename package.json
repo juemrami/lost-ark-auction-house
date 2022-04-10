@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
   "scripts": {
     "test": "node src/test.js",
     "start": "node src/index.js",
@@ -11,7 +14,8 @@
     "ocr": "node src/auctionHouse.js",
     "scrape": "node src/recipeScraper.js",
     "start:watch": "nodemon src/index.js",
-    "dev": "ts-node ./src/utils.ts"
+    "dev": "ts-node ./src/utils.ts",
+    "save": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^3.12.0",

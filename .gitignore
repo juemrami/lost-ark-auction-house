@@ -109,7 +109,7 @@ dist
 .tern-port
 
 ./src/data/*.json
-.image_dump/
+src/image_dump
 .vscode/
 tessdata_shreetest-master.zip
-src/image_dump
+./temp

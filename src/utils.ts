@@ -259,6 +259,7 @@ async function captureImage(
     .flatten()
     .negate({ alpha: false })
     .toColorspace("b-w")
+    .threshold(184)
     .withMetadata({ density: 150 })
     .png();
 

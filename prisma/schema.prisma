@@ -2,6 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 // npx prisma migrate dev - does a migration to the db
+//  --skip-seed
 // npx prisma generate - generate a prisma client from db
 generator client {
   provider = "prisma-client-js"
@@ -14,18 +15,18 @@ datasource db {
 
 model item {
   id            Int          @id @unique @default(autoincrement())
-  name          String
+  name          String       @unique
   bundle_size   Int          @default(1)
   price_history price_data[]
 }
 
 model price_data {
   data_id       String    @id @default(cuid())
-  item          item      @relation(fields: [item_id], references: [id])
-  item_id       Int
-  avg_day_price Int?
-  recent_price  Int?
-  lowest_price  Int?
+  item          item      @relation(fields: [item_name], references: [name])
+  item_name     String
+  avg_day_price Decimal?
+  recent_price  Decimal?
+  lowest_price  Decimal?
   lowest_rem    Int?
   date_time     DateTime?
 }
