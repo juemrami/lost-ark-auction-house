@@ -3,7 +3,7 @@ import robot from "robotjs";
 import { range } from "d3-array";
 import { writeFileSync, readFileSync } from "fs";
 import sharp from "sharp";
-import { createWorker, createScheduler } from "tesseract.js";
+import Tesseract, { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
 
 const {
@@ -164,11 +164,14 @@ async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
   for (const i in range(5)) {
-    worker_pool.push(await createWorker());
+    worker_pool.push(createWorker());
   }
   for (const worker of worker_pool) {
     console.log("loading worker...", worker.id);
-    await worker.load();
+    await worker.load({
+      logger: (info) => console.log(info),
+      langPath: "/models",
+    });
     await worker.loadLanguage("eng+digits_comma");
   }
   console.log("workers ready!");
