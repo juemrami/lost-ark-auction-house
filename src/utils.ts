@@ -93,9 +93,7 @@ async function main() {
         SEARCH_RESULT_BOX.LOC
         // item_name // uncomment for image saving
       );
-      console.log("sending job");
       results[item_name] = extractPrices(item_image);
-      console.log("moving to next item");
     }
     for (const item_name of items) {
       results[item_name] = await results[item_name];
@@ -103,19 +101,19 @@ async function main() {
         items = items.filter((x) => x != item_name);
       }
     }
-    if (items.length > 0){
-      console.log("items missing ", items, "refetching..." )
+    if (items.length > 0) {
+      console.log("items missing ", items, "refetching...");
     }
   }
 
-  let old: Object = JSON.parse(
-    readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
-  );
-  [].push.call(old, results);
-  let res = JSON.stringify(old);
-  writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
+  // let old: Object = JSON.parse(
+  //   readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
+  // );
+  // [].push.call(old, results);
+  // let res = JSON.stringify(old);
+  // writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
   writeFileSync(
-    process.cwd() + "\\src\\data\\prices2.json",
+    process.cwd() + "\\src\\data\\last_scan.json",
     JSON.stringify(results)
   );
   clipboard.writeSync(JSON.stringify(results));
@@ -134,6 +132,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
     //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
     // await image_buffer.toBuffer();
   }
+  console.log("job started by ", worker.id);
   await worker.initialize(lang);
   let {
     data: { text },
@@ -145,15 +144,17 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
       height: dim.height,
     },
   });
-  console.log(`-- ocr results: ${text.trim()}`);
-  // console.log(text.replace(/\s/g, ""));
-  // console.log(/\.\d{3,}/.test(text));
+  console.log(`\tJob done ${worker.id}`);
+  // console.log(`-- ocr results: ${text.trim()}`);
   if (/unit/.test(text)) {
+    // check if is bundle size text
     return text;
   } else if (/\.\d{3,}/.test(text)) {
+    // check if misinterpreted comma
     text = text.replace(/\./, "");
     return isNaN(Number(text)) ? "" : text.trim();
   } else {
+    // strip space between numbers
     text = text.replace(/\s/g, "");
     return isNaN(Number(text)) ? "" : text;
   }
@@ -162,13 +163,15 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
 async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
-  for (const i in range(3)) {
-    worker_pool.push(createWorker());
+  for (const i in range(5)) {
+    worker_pool.push(await createWorker());
   }
   for (const worker of worker_pool) {
+    console.log("loading worker...", worker.id);
     await worker.load();
     await worker.loadLanguage("eng+digits_comma");
   }
+  console.log("workers ready!");
   const getRecent = parseImage(
     image_buffer,
     worker_pool[0],
@@ -187,18 +190,33 @@ async function extractPrices(image_buffer: Buffer) {
     "eng",
     SEARCH_RESULT_BOX.BUNDLE_SIZE
   );
+  const getAvg = parseImage(
+    image_buffer,
+    worker_pool[3],
+    "digits_comma",
+    SEARCH_RESULT_BOX.AVG_DAILY_PRICE
+  );
+  const getCheapestRem = parseImage(
+    image_buffer,
+    worker_pool[4],
+    "digits_comma",
+    SEARCH_RESULT_BOX.CHEAPEST_REM
+  );
   let recent = await getRecent;
   let lowest = await getLowest;
   let bundle = await getBundle;
+  let avg_daily = await getAvg;
+  let cheapest_rem = await getCheapestRem;
   // console.log(recent, lowest);
   if (recent.length == 0 || lowest.length == 0) {
     return undefined;
   }
   let time = Date();
-  ocr_scheduler.terminate();
   let bundle_size = 1;
   let lowest_price = Number(lowest);
   let recent_price = Number(recent);
+  avg_daily = Number(avg_daily);
+  cheapest_rem = Number(cheapest_rem);
 
   // implement this better.
   // or remove and hardcode bundle sizes
@@ -210,15 +228,19 @@ async function extractPrices(image_buffer: Buffer) {
         bundle_size = Number(bundle_text[i - 1].trim());
         lowest_price = lowest_price / bundle_size;
         recent_price = recent_price / bundle_size;
+        avg_daily = avg_daily / bundle_size;
       }
     }
   }
 
+  ocr_scheduler.terminate();
   return {
     price: recent_price,
     lowPrice: lowest_price,
     unitSize: bundle_size,
     time,
+    avg_daily,
+    cheapest_rem,
   };
 }
 async function searchMarket(item_name: string) {
@@ -278,6 +300,6 @@ async function captureImage(
   if (filename) {
     img_buffer.toFile(`./temp/image_dump/${filename}.png`);
   }
-  console.log("screenshot done");
+  // console.log("screenshot done");
   return await img_buffer.toBuffer();
 }

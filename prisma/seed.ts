@@ -9,10 +9,12 @@ type data_form = {
     lowPrice: Decimal;
     unitSize: number;
     time: string;
+    avg_daily: Decimal;
+    cheapest_rem: number;
   };
 };
 
-const data = readFileSync("./src/data/prices2.json", { encoding: "utf-8" });
+const data = readFileSync("./src/data/last_scan.json", { encoding: "utf-8" });
 let item_list: data_form = JSON.parse(data);
 console.log(item_list);
 await prisma.$connect();
@@ -22,6 +24,8 @@ for (const [item_name, item] of Object.entries(item_list)) {
       recent_price: item.price,
       lowest_price: item.lowPrice,
       date_time: new Date(item.time),
+      avg_day_price: item.avg_daily,
+      lowest_rem: item.cheapest_rem,
       item: {
         connectOrCreate: {
           where: {

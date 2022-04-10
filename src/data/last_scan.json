@@ -1,0 +1,74 @@
+{
+    "Guardian Stone Crystal": {
+        "price": 0.7,
+        "lowPrice": 0.7,
+        "unitSize": 10,
+        "time": "Sun Apr 10 2022 13:11:41 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 0.77,
+        "cheapest_rem": 89
+    },
+    "Destruction Stone Crystal": {
+        "price": 1.9,
+        "lowPrice": 1.8,
+        "unitSize": 10,
+        "time": "Sun Apr 10 2022 13:11:47 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 1.93,
+        "cheapest_rem": 87
+    },
+    "Honor Leapstone": {
+        "price": 21,
+        "lowPrice": 21,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:11:50 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 20.6,
+        "cheapest_rem": 753
+    },
+    "Honor Shard Pouch (S)": {
+        "price": 22,
+        "lowPrice": 21,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:11:53 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 24.3,
+        "cheapest_rem": 11
+    },
+    "Great Honor Leapstone": {
+        "price": 97,
+        "lowPrice": 96,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:11:56 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 98.4,
+        "cheapest_rem": 6
+    },
+    "Solar Grace": {
+        "price": 33,
+        "lowPrice": 33,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:12:23 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 30.7,
+        "cheapest_rem": 27
+    },
+    "Solar Blessing": {
+        "price": 107,
+        "lowPrice": 107,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:12:05 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 107.1,
+        "cheapest_rem": 3
+    },
+    "Solar Protection": {
+        "price": 216,
+        "lowPrice": 215,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:12:12 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 199.1,
+        "cheapest_rem": 2
+    },
+    "Life Shard Pouch (S)": {
+        "price": 108,
+        "lowPrice": 108,
+        "unitSize": 1,
+        "time": "Sun Apr 10 2022 13:12:15 GMT-0700 (Pacific Daylight Time)",
+        "avg_daily": 114.4,
+        "cheapest_rem": 2
+    }
+}
