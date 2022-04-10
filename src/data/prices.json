@@ -223,5 +223,397 @@
             "time": "Sun Apr 10 2022 01:59:21 GMT-0700 (Pacific Daylight Time)"
         }
     },
-    "length": 4
+    "4": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 09:24:52 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 1.9,
+            "lowPrice": 1.9,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 09:24:56 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:24:58 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 24,
+            "lowPrice": 23,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:04 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 96,
+            "lowPrice": 97,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:08 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 33,
+            "lowPrice": 33,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:11 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 107,
+            "lowPrice": 105,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:29 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 198,
+            "lowPrice": 198,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:19 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 110,
+            "lowPrice": 109,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:25:22 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "5": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 09:58:03 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 1.8,
+            "lowPrice": 1.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 09:58:07 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 19,
+            "lowPrice": 19,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:09 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 24,
+            "lowPrice": 24,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:13 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 100,
+            "lowPrice": 99,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:16 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 33,
+            "lowPrice": 33,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:20 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 107,
+            "lowPrice": 106,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:24 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 210,
+            "lowPrice": 210,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:27 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 110,
+            "lowPrice": 110,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 09:58:31 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "6": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 10:15:48 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 2,
+            "lowPrice": 1.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 10:16:29 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:31 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 25,
+            "lowPrice": 25,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:15:59 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 94,
+            "lowPrice": 94,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:03 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 35,
+            "lowPrice": 35,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:07 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 107,
+            "lowPrice": 107,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:12 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 214,
+            "lowPrice": 213,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:15 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 109,
+            "lowPrice": 110,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:16:20 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "7": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 10:39:36 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 1.9,
+            "lowPrice": 1.9,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 10:39:40 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:39:42 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 25,
+            "lowPrice": 25,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:39:46 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 95,
+            "lowPrice": 95,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:40:14 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 34,
+            "lowPrice": 34,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:39:54 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 106,
+            "lowPrice": 106,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:39:58 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 217,
+            "lowPrice": 217,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:40:01 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 110,
+            "lowPrice": 114,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:40:17 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "8": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 11:00:27 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 1.9,
+            "lowPrice": 1.9,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 11:00:31 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:32 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 24,
+            "lowPrice": 24,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 10:59:58 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 94,
+            "lowPrice": 94,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:02 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 31,
+            "lowPrice": 30,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:06 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 105,
+            "lowPrice": 104,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:10 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 199,
+            "lowPrice": 199,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:14 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 114,
+            "lowPrice": 114,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 11:00:17 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "9": {
+        "Guardian Stone Crystal": {
+            "price": 0.8,
+            "lowPrice": 0.8,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 12:20:47 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 1.9,
+            "lowPrice": 1.9,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 12:20:51 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:20:55 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 21,
+            "lowPrice": 21,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:01 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 94,
+            "lowPrice": 94,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:05 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 30,
+            "lowPrice": 30,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:10 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 101,
+            "lowPrice": 100,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:33 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 192,
+            "lowPrice": 192,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:19 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 112,
+            "lowPrice": 112,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:21:24 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "10": {
+        "Guardian Stone Crystal": {
+            "price": 0.6,
+            "lowPrice": 0.6,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 12:35:04 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Destruction Stone Crystal": {
+            "price": 2,
+            "lowPrice": 1.9,
+            "unitSize": 10,
+            "time": "Sun Apr 10 2022 12:35:08 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Leapstone": {
+            "price": 20,
+            "lowPrice": 20,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:40 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Honor Shard Pouch (S)": {
+            "price": 22,
+            "lowPrice": 22,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:14 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Great Honor Leapstone": {
+            "price": 92,
+            "lowPrice": 92,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:17 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Grace": {
+            "price": 30,
+            "lowPrice": 30,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:23 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Blessing": {
+            "price": 102,
+            "lowPrice": 102,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:44 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Solar Protection": {
+            "price": 195,
+            "lowPrice": 193,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:47 GMT-0700 (Pacific Daylight Time)"
+        },
+        "Life Shard Pouch (S)": {
+            "price": 109,
+            "lowPrice": 109,
+            "unitSize": 1,
+            "time": "Sun Apr 10 2022 12:35:32 GMT-0700 (Pacific Daylight Time)"
+        }
+    },
+    "length": 11
 }
