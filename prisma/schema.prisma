@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model item {
+model market_item {
   id            Int          @id @unique @default(autoincrement())
   name          String       @unique
   bundle_size   Int          @default(1)
@@ -22,7 +22,7 @@ model item {
 
 model price_data {
   data_id       String    @id @default(cuid())
-  item          item      @relation(fields: [item_name], references: [name])
+  item          market_item      @relation(fields: [item_name], references: [name])
   item_name     String
   avg_day_price Decimal?
   recent_price  Decimal?

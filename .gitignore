@@ -112,4 +112,4 @@ dist
 src/image_dump
 .vscode/
 tessdata_shreetest-master.zip
-./temp
+./temp/image_dump

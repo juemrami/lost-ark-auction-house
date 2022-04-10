@@ -1,7 +1,7 @@
 import { wait } from "./helpers.js";
 import robot from "robotjs";
 import { range } from "d3-array";
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync } from "fs";
 import sharp from "sharp";
 import { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
@@ -69,7 +69,7 @@ const results: any = {};
 main();
 
 async function main() {
-  const items = [
+  let items = [
     "Guardian Stone Crystal",
     "Destruction Stone Crystal",
     "Honor Leapstone",
@@ -86,34 +86,46 @@ async function main() {
   await wait(2000);
   console.log("...commencing. dont touch mouse!");
 
-  for (const item_name of items) {
-    await searchMarket(item_name);
-    const item_image = await captureImage(
-      SEARCH_RESULT_BOX.LOC
-      // item_name // uncomment for image saving
-    );
-    results[item_name] = extractPrices(item_image);
-  }
-  for (const item_name of items) {
-    results[item_name] = await results[item_name];
-    while (!results[item_name]) {
-      console.log("price missing for ", item_name, "...refetching.");
+  while (items.length > 0) {
+    for (const item_name of items) {
       await searchMarket(item_name);
-      results[item_name] = await extractPrices(
-        await captureImage(SEARCH_RESULT_BOX.LOC)
+      const item_image = await captureImage(
+        SEARCH_RESULT_BOX.LOC
+        // item_name // uncomment for image saving
       );
+      console.log("sending job");
+      results[item_name] = extractPrices(item_image);
+      console.log("moving to next item");
+    }
+    for (const item_name of items) {
+      results[item_name] = await results[item_name];
+      if (results[item_name]) {
+        items = items.filter((x) => x != item_name);
+      }
+    }
+    if (items.length > 0){
+      console.log("items missing ", items, "refetching..." )
     }
   }
-  console.log("done");
-  console.log(results);
+
+  let old: Object = JSON.parse(
+    readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
+  );
+  [].push.call(old, results);
+  let res = JSON.stringify(old);
+  writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
   writeFileSync(
     process.cwd() + "\\src\\data\\prices2.json",
     JSON.stringify(results)
   );
+  clipboard.writeSync(JSON.stringify(results));
+  console.log("results copied to keyboard.");
+  console.log("run `yarn save` to push to db");
   process.exit();
 }
 async function parseImage(image_buffer, worker, lang, dim?: any) {
-  { // crop and zoom and flatten if needed for better resolution
+  {
+    // crop and zoom and flatten if needed for better resolution
     // const image_buffer = sharp(image_buffer)
     //   .extract({ left: dim.x, top: dim.y, width: dim.width, height: dim.height })
     //   .resize(dim.width * 4, dim.height * 4, { kernel: "mitchell" })
@@ -133,7 +145,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
       height: dim.height,
     },
   });
-  console.log(`ocr results: ${text.trim()}`);
+  console.log(`-- ocr results: ${text.trim()}`);
   // console.log(text.replace(/\s/g, ""));
   // console.log(/\.\d{3,}/.test(text));
   if (/unit/.test(text)) {
@@ -266,5 +278,6 @@ async function captureImage(
   if (filename) {
     img_buffer.toFile(`./temp/image_dump/${filename}.png`);
   }
+  console.log("screenshot done");
   return await img_buffer.toBuffer();
 }

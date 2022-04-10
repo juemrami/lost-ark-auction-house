@@ -1,0 +1,861 @@
+{
+  "recipe--10101001": {
+    "id": "recipe--10101001",
+    "name": "Flash Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 5 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101011": {
+    "id": "recipe--10101011",
+    "name": "Flame Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882304", "id": "6882304", "amount": 3 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101015": {
+    "id": "recipe--10101015",
+    "name": "Panacea",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 16 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 5 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101021": {
+    "id": "recipe--10101021",
+    "name": "Frost Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 5 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101031": {
+    "id": "recipe--10101031",
+    "name": "Electric Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 5 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101042": {
+    "id": "recipe--10101042",
+    "name": "Flare",
+    "materials": [
+      { "urlID": "item--6882605", "id": "6882605", "amount": 20 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 35 }
+    ],
+    "amount": 3,
+    "cost": null
+  },
+  "recipe--10101052": {
+    "id": "recipe--10101052",
+    "name": "Taunting Scarecrow",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 15 },
+      { "urlID": "item--6882301", "id": "6882301", "amount": 13 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101061": {
+    "id": "recipe--10101061",
+    "name": "HP Potion",
+    "materials": [
+      { "urlID": "item--6882104", "id": "6882104", "amount": 5 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 10 }
+    ],
+    "amount": 3,
+    "cost": null
+  },
+  "recipe--10101062": {
+    "id": "recipe--10101062",
+    "name": "Major HP Potion",
+    "materials": [
+      { "urlID": "item--6882104", "id": "6882104", "amount": 9 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 18 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101063": {
+    "id": "recipe--10101063",
+    "name": "Elemental HP Potion",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 6 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 24 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 48 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101072": {
+    "id": "recipe--10101072",
+    "name": "Awakening Potion",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 5 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 20 },
+      { "urlID": "item--6884307", "id": "6884307", "amount": 2 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 4 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 40 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101081": {
+    "id": "recipe--10101081",
+    "name": "Campfire",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 15 },
+      { "urlID": "item--6882301", "id": "6882301", "amount": 12 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101101": {
+    "id": "recipe--10101101",
+    "name": "Marching Flag",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882605", "id": "6882605", "amount": 8 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 38 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101122": {
+    "id": "recipe--10101122",
+    "name": "Camouflage Robe",
+    "materials": [
+      { "urlID": "item--6882505", "id": "6882505", "amount": 22 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 22 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 35 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101131": {
+    "id": "recipe--10101131",
+    "name": "Stealth Robe",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 5 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 15 },
+      { "urlID": "item--6884407", "id": "6884407", "amount": 2 },
+      { "urlID": "item--6882505", "id": "6882505", "amount": 2 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 35 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101151": {
+    "id": "recipe--10101151",
+    "name": "Dark Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882304", "id": "6882304", "amount": 3 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101171": {
+    "id": "recipe--10101171",
+    "name": "Corrosive Bomb",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882404", "id": "6882404", "amount": 6 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101181": {
+    "id": "recipe--10101181",
+    "name": "Protective Potion",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 16 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 5 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101191": {
+    "id": "recipe--10101191",
+    "name": "Sacred Charm",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 18 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 30 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101203": {
+    "id": "recipe--10101203",
+    "name": "Thunder Potion",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 4 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 16 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 5 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101211": {
+    "id": "recipe--10101211",
+    "name": "Swiftness Robe",
+    "materials": [
+      { "urlID": "item--6882505", "id": "6882505", "amount": 17 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 17 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 27 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101221": {
+    "id": "recipe--10101221",
+    "name": "Whirlwind Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882304", "id": "6882304", "amount": 3 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101231": {
+    "id": "recipe--10101231",
+    "name": "Clay Grenade",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 5 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101261": {
+    "id": "recipe--10101261",
+    "name": "Sleep Bomb",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 10 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101271": {
+    "id": "recipe--10101271",
+    "name": "Sacred Bomb",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 24 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 3 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101291": {
+    "id": "recipe--10101291",
+    "name": "Adrophine Potion",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 6 },
+      { "urlID": "item--6884407", "id": "6884407", "amount": 2 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 24 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 2 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 48 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101301": {
+    "id": "recipe--10101301",
+    "name": "Luterra's Horn",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 4 },
+      { "urlID": "item--6884407", "id": "6884407", "amount": 2 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 20 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 40 },
+      { "urlID": "item--6882401", "id": "6882401", "amount": 2 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101912": {
+    "id": "recipe--10101912",
+    "name": "Destruction Bomb",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882404", "id": "6882404", "amount": 6 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101914": {
+    "id": "recipe--10101914",
+    "name": "Repair Shop Portal Scroll",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 18 },
+      { "urlID": "item--6882605", "id": "6882605", "amount": 16 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 144 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101915": {
+    "id": "recipe--10101915",
+    "name": "Time Stop Potion",
+    "materials": [
+      { "urlID": "item--6882107", "id": "6882107", "amount": 5 },
+      { "urlID": "item--6884307", "id": "6884307", "amount": 2 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 20 },
+      { "urlID": "item--6882704", "id": "6882704", "amount": 2 },
+      { "urlID": "item--6882101", "id": "6882101", "amount": 40 }
+    ],
+    "amount": 3,
+    "cost": 30
+  },
+  "recipe--10101916": {
+    "id": "recipe--10101916",
+    "name": "Pheromone Bomb",
+    "materials": [
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 },
+      { "urlID": "item--6882204", "id": "6882204", "amount": 12 },
+      { "urlID": "item--6882404", "id": "6882404", "amount": 6 },
+      { "urlID": "item--6882201", "id": "6882201", "amount": 32 }
+    ],
+    "amount": 3,
+    "cost": 15
+  },
+  "recipe--10101917": {
+    "id": "recipe--10101917",
+    "name": "Splendid Elemental HP Potion",
+    "materials": [
+      { "urlID": "item--101063", "id": "101063", "amount": 3 },
+      { "urlID": "item--6882107", "id": "6882107", "amount": 8 }
+    ],
+    "amount": 2,
+    "cost": 30
+  },
+  "recipe--10101918": {
+    "id": "recipe--10101918",
+    "name": "Splendid Flash Grenade",
+    "materials": [
+      { "urlID": "item--101001", "id": "101001", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101919": {
+    "id": "recipe--10101919",
+    "name": "Splendid Flame Grenade",
+    "materials": [
+      { "urlID": "item--101011", "id": "101011", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101920": {
+    "id": "recipe--10101920",
+    "name": "Splendid Frost Grenade",
+    "materials": [
+      { "urlID": "item--101021", "id": "101021", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101921": {
+    "id": "recipe--10101921",
+    "name": "Splendid Lightening Grenade",
+    "materials": [
+      { "urlID": "item--101031", "id": "101031", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101922": {
+    "id": "recipe--10101922",
+    "name": "Splendid Clay Grenade",
+    "materials": [
+      { "urlID": "item--101231", "id": "101231", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101923": {
+    "id": "recipe--10101923",
+    "name": "Splendid Whirlwind Grenade",
+    "materials": [
+      { "urlID": "item--101221", "id": "101221", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101924": {
+    "id": "recipe--10101924",
+    "name": "Splendid Dark Grenade",
+    "materials": [
+      { "urlID": "item--101151", "id": "101151", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101925": {
+    "id": "recipe--10101925",
+    "name": "Splendid Sleep Bomb",
+    "materials": [
+      { "urlID": "item--101261", "id": "101261", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 2 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101926": {
+    "id": "recipe--10101926",
+    "name": "Splendid Destruction Bomb",
+    "materials": [
+      { "urlID": "item--101912", "id": "101912", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 2 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101927": {
+    "id": "recipe--10101927",
+    "name": "Splendid Corrosion Bomb",
+    "materials": [
+      { "urlID": "item--101171", "id": "101171", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 2 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101928": {
+    "id": "recipe--10101928",
+    "name": "Splendid Sacred Bomb",
+    "materials": [
+      { "urlID": "item--101271", "id": "101271", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 4 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101929": {
+    "id": "recipe--10101929",
+    "name": "Splendid Panacea",
+    "materials": [
+      { "urlID": "item--101015", "id": "101015", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 10 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101930": {
+    "id": "recipe--10101930",
+    "name": "Splendid Protective Potion",
+    "materials": [
+      { "urlID": "item--101181", "id": "101181", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 10 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101931": {
+    "id": "recipe--10101931",
+    "name": "Splendid Thunder Potion",
+    "materials": [
+      { "urlID": "item--101203", "id": "101203", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 10 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101932": {
+    "id": "recipe--10101932",
+    "name": "Splendid Disguise Robe",
+    "materials": [
+      { "urlID": "item--101122", "id": "101122", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 9 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101933": {
+    "id": "recipe--10101933",
+    "name": "Splendid Stealth Robe",
+    "materials": [
+      { "urlID": "item--101131", "id": "101131", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 9 }
+    ],
+    "amount": 2,
+    "cost": 30
+  },
+  "recipe--10101934": {
+    "id": "recipe--10101934",
+    "name": "Splendid Swift Robe",
+    "materials": [
+      { "urlID": "item--101211", "id": "101211", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101935": {
+    "id": "recipe--10101935",
+    "name": "Splendid Flare",
+    "materials": [
+      { "urlID": "item--101042", "id": "101042", "amount": 3 },
+      { "urlID": "item--6882104", "id": "6882104", "amount": 20 }
+    ],
+    "amount": 2,
+    "cost": 5
+  },
+  "recipe--10101936": {
+    "id": "recipe--10101936",
+    "name": "Splendid Campfire",
+    "materials": [
+      { "urlID": "item--101081", "id": "101081", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 6 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101937": {
+    "id": "recipe--10101937",
+    "name": "Splendid Taunting Scarecrow",
+    "materials": [
+      { "urlID": "item--101052", "id": "101052", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 7 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101938": {
+    "id": "recipe--10101938",
+    "name": "Splendid Sacred Charm",
+    "materials": [
+      { "urlID": "item--101191", "id": "101191", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "recipe--10101939": {
+    "id": "recipe--10101939",
+    "name": "Splendid Marching Flag",
+    "materials": [
+      { "urlID": "item--101101", "id": "101101", "amount": 3 },
+      { "urlID": "item--6882207", "id": "6882207", "amount": 3 }
+    ],
+    "amount": 2,
+    "cost": 15
+  },
+  "item--6882207": {
+    "id": "item--6882207",
+    "name": "Exquisite Mushroom",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882204": {
+    "id": "item--6882204",
+    "name": "Fresh Mushroom",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882201": {
+    "id": "item--6882201",
+    "name": "Crude Mushroom",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882401": {
+    "id": "item--6882401",
+    "name": "Iron Ore",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882304": {
+    "id": "item--6882304",
+    "name": "Tender Timber",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882704": {
+    "id": "item--6882704",
+    "name": "Rare Relic",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882605": {
+    "id": "item--6882605",
+    "name": "Natural Pearl",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882101": {
+    "id": "item--6882101",
+    "name": "Wild Flower",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882301": {
+    "id": "item--6882301",
+    "name": "Timber",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882104": {
+    "id": "item--6882104",
+    "name": "Shy Wild Flower",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882107": {
+    "id": "item--6882107",
+    "name": "Bright Wild Flower",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6884307": {
+    "id": "item--6884307",
+    "name": "Sturdy Timber",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882505": {
+    "id": "item--6882505",
+    "name": "Tough Leather",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6884407": {
+    "id": "item--6884407",
+    "name": "Strong Iron Ore",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--6882404": {
+    "id": "item--6882404",
+    "name": "Heavy Iron Ore",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101063": {
+    "id": "item--101063",
+    "name": "Elemental HP Potion",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101001": {
+    "id": "item--101001",
+    "name": "Flash Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101011": {
+    "id": "item--101011",
+    "name": "Flame Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101021": {
+    "id": "item--101021",
+    "name": "Frost Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101031": {
+    "id": "item--101031",
+    "name": "Electric Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101231": {
+    "id": "item--101231",
+    "name": "Clay Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101221": {
+    "id": "item--101221",
+    "name": "Whirlwind Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101151": {
+    "id": "item--101151",
+    "name": "Dark Grenade",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101261": {
+    "id": "item--101261",
+    "name": "Sleep Bomb",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101912": {
+    "id": "item--101912",
+    "name": "Destruction Bomb",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101171": {
+    "id": "item--101171",
+    "name": "Corrosive Bomb",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101271": {
+    "id": "item--101271",
+    "name": "Sacred Bomb",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101015": {
+    "id": "item--101015",
+    "name": "Panacea",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101181": {
+    "id": "item--101181",
+    "name": "Protective Potion",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101203": {
+    "id": "item--101203",
+    "name": "Thunder Potion",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101122": {
+    "id": "item--101122",
+    "name": "Camouflage Robe",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101131": {
+    "id": "item--101131",
+    "name": "Stealth Robe",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101211": {
+    "id": "item--101211",
+    "name": "Swiftness Robe",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101042": {
+    "id": "item--101042",
+    "name": "Flare",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101081": {
+    "id": "item--101081",
+    "name": "Campfire",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101052": {
+    "id": "item--101052",
+    "name": "Taunting Scarecrow",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101191": {
+    "id": "item--101191",
+    "name": "Sacred Charm",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  },
+  "item--101101": {
+    "id": "item--101101",
+    "name": "Marching Flag",
+    "materials": [],
+    "amount": 1,
+    "cost": 0
+  }
+}
