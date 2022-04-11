@@ -106,12 +106,12 @@ async function main() {
     }
   }
 
-  // let old: Object = JSON.parse(
-  //   readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
-  // );
-  // [].push.call(old, results);
-  // let res = JSON.stringify(old);
-  // writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
+  let old: Object = JSON.parse(
+    readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
+  );
+  [].push.call(old, results);
+  let res = JSON.stringify(old);
+  writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
   writeFileSync(
     process.cwd() + "\\src\\data\\last_scan.json",
     JSON.stringify(results)
@@ -132,7 +132,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
     //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
     // await image_buffer.toBuffer();
   }
-  console.log("job started by ", worker.id);
+  // console.log("job started by ", worker.id);
   await worker.initialize(lang);
   let {
     data: { text },
@@ -144,7 +144,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
       height: dim.height,
     },
   });
-  console.log(`\tJob done ${worker.id}`);
+  // console.log(`\tJob done ${worker.id}`);
   // console.log(`-- ocr results: ${text.trim()}`);
   if (/unit/.test(text)) {
     // check if is bundle size text
@@ -164,14 +164,18 @@ async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
   for (const i in range(5)) {
-    worker_pool.push(createWorker());
+    worker_pool.push(
+      createWorker({
+        // logger: (m) => console.log(m),
+        // errorHandler: (e) => console.log(console.error()),
+        cachePath: process.cwd() + "\\models\\",
+        gzip: false,
+      })
+    );
   }
   for (const worker of worker_pool) {
-    console.log("loading worker...", worker.id);
-    await worker.load({
-      logger: (info) => console.log(info),
-      langPath: "/models",
-    });
+    // console.log("loading worker...", worker.id);
+    await worker.load();
     await worker.loadLanguage("eng+digits_comma");
   }
   console.log("workers ready!");
@@ -205,12 +209,13 @@ async function extractPrices(image_buffer: Buffer) {
     "digits_comma",
     SEARCH_RESULT_BOX.CHEAPEST_REM
   );
+  const killWorkers = ocr_scheduler.terminate();
   let recent = await getRecent;
   let lowest = await getLowest;
   let bundle = await getBundle;
   let avg_daily = await getAvg;
   let cheapest_rem = await getCheapestRem;
-  // console.log(recent, lowest);
+  console.log(recent, lowest, cheapest_rem);
   if (recent.length == 0 || lowest.length == 0) {
     return undefined;
   }
@@ -231,12 +236,12 @@ async function extractPrices(image_buffer: Buffer) {
         bundle_size = Number(bundle_text[i - 1].trim());
         lowest_price = lowest_price / bundle_size;
         recent_price = recent_price / bundle_size;
-        avg_daily = avg_daily / bundle_size;
+        avg_daily = Number((avg_daily / bundle_size).toFixed(3));
       }
     }
   }
 
-  ocr_scheduler.terminate();
+  await killWorkers;
   return {
     price: recent_price,
     lowPrice: lowest_price,

@@ -21,10 +21,10 @@ await prisma.$connect();
 for (const [item_name, item] of Object.entries(item_list)) {
   await prisma.price_data.create({
     data: {
-      recent_price: item.price,
-      lowest_price: item.lowPrice,
+      recent_price: item.unitSize * Number(item.price),
+      lowest_price: Number(item.lowPrice) * item.unitSize,
       date_time: new Date(item.time),
-      avg_day_price: item.avg_daily,
+      avg_day_price: Number(item.avg_daily) * item.unitSize,
       lowest_rem: item.cheapest_rem,
       item: {
         connectOrCreate: {
