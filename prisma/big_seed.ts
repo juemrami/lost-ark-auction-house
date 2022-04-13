@@ -1,26 +1,9 @@
 import Prisma from "@prisma/client";
-import { Decimal } from "@prisma/client/runtime";
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
-type _dataformat = {
-  item_name: {
-    price: Decimal;
-    lowPrice: Decimal;
-    unitSize: number;
-    time: string;
-    avg_daily: Decimal;
-    cheapest_rem: number;
-  };
-};
-
+const bad_data = {};
 const prisma = new Prisma.PrismaClient();
-type sheets_data = {
-  recent_price: string;
-  date_time: string;
-};
-type data_form = _dataformat[];
-// console.log(process.cwd());
-const data = readFileSync(process.cwd() + "/src/data/_prices.json", {
+const data = readFileSync(process.cwd() + "/src/data/prices.json", {
   encoding: "utf-8",
 });
 let entry_list = JSON.parse(data);
@@ -28,28 +11,37 @@ let entry_list = JSON.parse(data);
 await prisma.$connect();
 for (const [index, price_data_entry] of Object.entries(entry_list)) {
   for (const [item_name, item_data] of Object.entries(price_data_entry)) {
-    console.log(item_data);
     const { price, lowPrice, unitSize, time, avg_daily, cheapest_rem } =
       item_data;
-
-    !(await prisma.price_data.findFirst({
-      where: {
-        AND: {
-          item_name: {
-            equals: String(item_name),
+    if (unitSize != 1 && unitSize != 10 && unitSize != null) {
+      if (!bad_data[item_name]) {
+        bad_data[item_name] = [];
+      }
+      console.log("bad data found. not saving..");
+      console.log(item_data);
+      bad_data[item_name].push(item_data);
+      continue;
+    }
+    if (
+      !(await prisma.price_data.findFirst({
+        where: {
+          AND: {
+            item_name: {
+              equals: String(item_name),
+            },
+          },
+          date_time: {
+            equals: new Date(time),
           },
         },
-        date_time: {
-          equals: time,
-        },
-      },
-    }));
-    {
-      console.log("data does not exist, saving.");
+      }))
+    ) {
+      console.log("data does not exist, saving...");
+      // console.log(item_data);
       await prisma.price_data.create({
         data: {
           recent_price: price,
-          date_time: time,
+          date_time: new Date(time),
           avg_day_price: avg_daily,
           lowest_rem: cheapest_rem,
           lowest_price: lowPrice,
@@ -62,10 +54,15 @@ for (const [index, price_data_entry] of Object.entries(entry_list)) {
         },
         include: { item: true },
       });
+    } else {
+      console.log("data exists not saving...");
     }
-    console.log("data exists not saving.");
   }
 }
 
 await prisma.$disconnect();
-console.log("done");
+writeFileSync(
+  process.cwd() + "/src/data/bad_data_2.json",
+  JSON.stringify(bad_data)
+);
+// console.log("done");

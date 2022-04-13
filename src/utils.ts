@@ -163,7 +163,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
 async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
-  for (const i in range(5)) {
+  for (const i in range(4)) {
     worker_pool.push(
       createWorker({
         // logger: (m) => console.log(m),
@@ -191,27 +191,27 @@ async function extractPrices(image_buffer: Buffer) {
     "digits_comma",
     SEARCH_RESULT_BOX.LOWEST_PRICE
   );
-  const getBundle = parseImage(
-    image_buffer,
-    worker_pool[2],
-    "eng",
-    SEARCH_RESULT_BOX.BUNDLE_SIZE
-  );
+  // const getBundle = parseImage(
+  //   image_buffer,
+  //   worker_pool[2],
+  //   "eng",
+  //   SEARCH_RESULT_BOX.BUNDLE_SIZE
+  // );
+  // let bundle = await getBundle;
   const getAvg = parseImage(
     image_buffer,
-    worker_pool[3],
+    worker_pool[2],
     "digits_comma",
     SEARCH_RESULT_BOX.AVG_DAILY_PRICE
   );
   const getCheapestRem = parseImage(
     image_buffer,
-    worker_pool[4],
+    worker_pool[3],
     "digits_comma",
     SEARCH_RESULT_BOX.CHEAPEST_REM
   );
   let recent = await getRecent;
   let lowest = await getLowest;
-  let bundle = await getBundle;
   let avg_daily = await getAvg;
   let cheapest_rem = await getCheapestRem;
   const killWorkers = ocr_scheduler.terminate();
@@ -220,7 +220,7 @@ async function extractPrices(image_buffer: Buffer) {
     return undefined;
   }
   let time = Date();
-  let bundle_size = 1;
+  let bundle_size = null;
   let lowest_price = Number(lowest);
   let recent_price = Number(recent);
   avg_daily = Number(avg_daily);
@@ -228,18 +228,18 @@ async function extractPrices(image_buffer: Buffer) {
 
   // implement this better.
   // or remove and hardcode bundle sizes
-  if (bundle.length > 0) {
-    const bundle_text = bundle.split(" ");
-    for (let i = 0; i < bundle_text.length; i++) {
-      const word = bundle_text[i];
-      if (word.toLowerCase().includes("units")) {
-        bundle_size = Number(bundle_text[i - 1].trim());
-        // lowest_price = lowest_price / bundle_size;
-        // recent_price = recent_price / bundle_size;
-        // avg_daily = Number((avg_daily / bundle_size).toFixed(3));
-      }
-    }
-  }
+  // if (bundle.length > 0) {
+  //   const bundle_text = bundle.split(" ");
+  //   for (let i = 0; i < bundle_text.length; i++) {
+  //     const word = bundle_text[i];
+  //     if (word.toLowerCase().includes("units")) {
+  //       bundle_size = Number(bundle_text[i - 1].trim());
+  //       // lowest_price = lowest_price / bundle_size;
+  //       // recent_price = recent_price / bundle_size;
+  //       // avg_daily = Number((avg_daily / bundle_size).toFixed(3));
+  //     }
+  //   }
+  // }
 
   await killWorkers;
   return {
