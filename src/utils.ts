@@ -209,12 +209,12 @@ async function extractPrices(image_buffer: Buffer) {
     "digits_comma",
     SEARCH_RESULT_BOX.CHEAPEST_REM
   );
-  const killWorkers = ocr_scheduler.terminate();
   let recent = await getRecent;
   let lowest = await getLowest;
   let bundle = await getBundle;
   let avg_daily = await getAvg;
   let cheapest_rem = await getCheapestRem;
+  const killWorkers = ocr_scheduler.terminate();
   console.log(recent, lowest, cheapest_rem);
   if (recent.length == 0 || lowest.length == 0) {
     return undefined;
@@ -234,9 +234,9 @@ async function extractPrices(image_buffer: Buffer) {
       const word = bundle_text[i];
       if (word.toLowerCase().includes("units")) {
         bundle_size = Number(bundle_text[i - 1].trim());
-        lowest_price = lowest_price / bundle_size;
-        recent_price = recent_price / bundle_size;
-        avg_daily = Number((avg_daily / bundle_size).toFixed(3));
+        // lowest_price = lowest_price / bundle_size;
+        // recent_price = recent_price / bundle_size;
+        // avg_daily = Number((avg_daily / bundle_size).toFixed(3));
       }
     }
   }

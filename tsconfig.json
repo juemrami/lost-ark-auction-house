@@ -100,7 +100,7 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src/**/*", "./temp/**/*", "prisma/big_seed.ts"],
+  "include": ["./src/**/*", "./temp/**/*", "prisma/seed_from_sheets.ts"],
   "ts-node": {
     "esm": true
   }
