@@ -176,7 +176,7 @@ async function extractPrices(image_buffer: Buffer) {
   for (const worker of worker_pool) {
     // console.log("loading worker...", worker.id);
     await worker.load();
-    await worker.loadLanguage("eng+digits_comma");
+    await worker.loadLanguage("digits_comma");
   }
   console.log("workers ready!");
   const getRecent = parseImage(

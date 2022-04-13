@@ -15,20 +15,19 @@ type data_form = {
   };
 };
 const exists_in_db = async (item_name, time) => {
-  if (
-    await prisma.price_data.findFirst({
-      where: {
-        AND: {
-          item_name: {
-            equals: String(item_name),
-          },
-        },
-        date_time: {
-          equals: new Date(time),
+  let res = await prisma.price_data.findFirst({
+    where: {
+      AND: {
+        item_name: {
+          equals: String(item_name),
         },
       },
-    })
-  ) {
+      date_time: {
+        equals: new Date(time),
+      },
+    },
+  });
+  if (res) {
     return true;
   } else return false;
 };
@@ -38,7 +37,7 @@ let item_list: data_form = JSON.parse(data);
 console.log(item_list);
 await prisma.$connect();
 for (const [item_name, item] of Object.entries(item_list)) {
-  if (exists_in_db(item_name, item.time)) {
+  if (await exists_in_db(item_name, item.time)) {
     console.log("data exists in db, not saving..");
     continue;
   }
