@@ -118,3 +118,4 @@ src/data/_prices.json
 src/data/prices.json
 src/data/prices.json
 src/data/bad_data.json
+prisma/db_export_json.ts

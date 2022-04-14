@@ -10,7 +10,8 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true,
-    "node_modules": true
+    "node_modules": true,
+    "src/data/recipes.json": true
   },
-  "hide-files.files": ["node_modules"]
+  "hide-files.files": ["node_modules", "src/data/recipes.json"]
 }

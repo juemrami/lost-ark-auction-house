@@ -12,7 +12,8 @@
     "ocr": "node src/auctionHouse.js",
     "scan": "ts-node ./src/utils.ts",
     "save": "ts-node prisma/seed.ts",
-    "transfer": "ts-node prisma/big_seed.ts"
+    "transfer": "ts-node prisma/big_seed.ts",
+    "export": "ts-node prisma/db_export_json.ts"
   },
   "dependencies": {
     "@prisma/client": "^3.12.0",

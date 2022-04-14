@@ -21,12 +21,14 @@ model market_item {
 }
 
 model price_data {
-  data_id       String    @id @default(cuid())
-  item          market_item      @relation(fields: [item_name], references: [name])
+  data_id       String      @id @default(cuid())
+  item          market_item @relation(fields: [item_name], references: [name])
   item_name     String
   avg_day_price Decimal?
   recent_price  Decimal?
   lowest_price  Decimal?
-  lowest_rem    Int?
+  cheapest_rem  Int?
   date_time     DateTime?
+
+  @@unique([item_name, date_time])
 }

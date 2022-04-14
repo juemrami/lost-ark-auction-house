@@ -257,12 +257,18 @@ async function searchMarket(item_name: string) {
   // To search bar and search
   moveMouseSmooth(SEARCH_BOX.x, SEARCH_BOX.y);
   mouseClick();
+  await wait(40)
+  mouseClick();
+
   // paste the search term
   moveMouseSmooth(SEARCH_BOX.x - 50, SEARCH_BOX.y);
   mouseClick();
+  mouseClick();
   keyTap("v", "control");
+  await wait(10);
   // start searching
   keyTap("enter");
+  
   // Wait for search results
   await wait(500);
 
