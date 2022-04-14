@@ -2,8 +2,10 @@ import Prisma from "@prisma/client";
 import { readFileSync, writeFileSync } from "fs";
 
 const bad_data = {};
+let add_count = 0;
+let ignore_count = 0;
 const prisma = new Prisma.PrismaClient();
-const data = readFileSync(process.cwd() + "/src/data/prices.json", {
+const data = readFileSync(process.cwd() + "/src/data/recent_scans.json", {
   encoding: "utf-8",
 });
 let entry_list = JSON.parse(data);
@@ -36,14 +38,14 @@ for (const [index, price_data_entry] of Object.entries(entry_list)) {
         },
       }))
     ) {
-      console.log("data does not exist, saving...");
+      // console.log("data does not exist, saving...");
       // console.log(item_data);
       await prisma.price_data.create({
         data: {
           recent_price: price,
           date_time: new Date(time),
           avg_day_price: avg_daily,
-          lowest_rem: cheapest_rem,
+          cheapest_rem: cheapest_rem,
           lowest_price: lowPrice,
           item: {
             connectOrCreate: {
@@ -54,15 +56,19 @@ for (const [index, price_data_entry] of Object.entries(entry_list)) {
         },
         include: { item: true },
       });
+      add_count++;
     } else {
-      console.log("data exists not saving...");
+      // console.log("data exists not saving...");
+      ignore_count++;
     }
   }
 }
 
 await prisma.$disconnect();
 writeFileSync(
-  process.cwd() + "/src/data/bad_data_2.json",
+  process.cwd() + "/src/data/bad_data.json",
   JSON.stringify(bad_data)
 );
-// console.log("done");
+console.log("done");
+console.log("Data Samples Saved: ", add_count);
+console.log("Duplicate Samples Ignored: ", ignore_count);

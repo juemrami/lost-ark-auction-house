@@ -107,18 +107,18 @@ async function main() {
   }
 
   let old: Object = JSON.parse(
-    readFileSync(process.cwd() + "\\src\\data\\prices.json", "utf-8")
+    readFileSync(process.cwd() + "\\src\\data\\recent_scans.json", "utf-8")
   );
   [].push.call(old, results);
   let res = JSON.stringify(old);
-  writeFileSync(process.cwd() + "\\src\\data\\prices.json", res);
+  writeFileSync(process.cwd() + "\\src\\data\\recent_scans.json", res);
   writeFileSync(
     process.cwd() + "\\src\\data\\last_scan.json",
     JSON.stringify(results)
   );
   clipboard.writeSync(JSON.stringify(results));
   console.log("results copied to keyboard.");
-  console.log("run `yarn save` to push to db");
+  console.log("run `yarn transfer` to push to db");
   process.exit();
 }
 async function parseImage(image_buffer, worker, lang, dim?: any) {
@@ -257,7 +257,7 @@ async function searchMarket(item_name: string) {
   // To search bar and search
   moveMouseSmooth(SEARCH_BOX.x, SEARCH_BOX.y);
   mouseClick();
-  await wait(40)
+  await wait(40);
   mouseClick();
 
   // paste the search term
@@ -268,7 +268,7 @@ async function searchMarket(item_name: string) {
   await wait(10);
   // start searching
   keyTap("enter");
-  
+
   // Wait for search results
   await wait(500);
 

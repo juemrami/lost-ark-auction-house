@@ -11,8 +11,8 @@
     "test": "node src/test.js",
     "ocr": "node src/auctionHouse.js",
     "scan": "ts-node ./src/utils.ts",
-    "save": "ts-node prisma/seed.ts",
-    "transfer": "ts-node prisma/big_seed.ts",
+    "db seed": "ts-node prisma/seed.ts",
+    "transfer": "ts-node prisma/transfer_recent_scans.ts",
     "export": "ts-node prisma/db_export_json.ts"
   },
   "dependencies": {

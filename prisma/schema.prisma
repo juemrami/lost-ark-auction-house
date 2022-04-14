@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// npx prisma migrate dev - does a migration to the db
-//  --skip-seed
-// npx prisma generate - generate a prisma client from db
 generator client {
   provider = "prisma-client-js"
 }
@@ -22,13 +16,13 @@ model market_item {
 
 model price_data {
   data_id       String      @id @default(cuid())
-  item          market_item @relation(fields: [item_name], references: [name])
-  item_name     String
   avg_day_price Decimal?
   recent_price  Decimal?
   lowest_price  Decimal?
   cheapest_rem  Int?
   date_time     DateTime?
+  item_name     String
+  item          market_item @relation(fields: [item_name], references: [name])
 
   @@unique([item_name, date_time])
 }

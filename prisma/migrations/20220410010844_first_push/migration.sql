@@ -1,4 +1,0 @@
--- AlterTable
-ALTER TABLE "price_data" ALTER COLUMN "avg_day_price" SET DATA TYPE DECIMAL(65,30),
-ALTER COLUMN "recent_price" SET DATA TYPE DECIMAL(65,30),
-ALTER COLUMN "lowest_price" SET DATA TYPE DECIMAL(65,30);
