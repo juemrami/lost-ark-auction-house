@@ -1,37 +1,6 @@
-import fs from "fs";
-import Jimp from "jimp";
 import robot from "robotjs";
 import sharp from "sharp";
 
-export const PRICE_CONFIG = process.cwd() + "\\src\\data\\prices.json";
-export const RECIPES_PATH = process.cwd() + "\\src\\data\\recipes.json";
-
-export const recipes = fs.existsSync(RECIPES_PATH)
-  ? JSON.parse(fs.readFileSync(RECIPES_PATH))
-  : false;
-export const prices = fs.existsSync(PRICE_CONFIG)
-  ? JSON.parse(fs.readFileSync(PRICE_CONFIG))
-  : false;
-
-export function generatePriceConfig(data) {
-  let out = {};
-  Object.values(data).forEach((recipe) => {
-    if (!out[recipe.name]) {
-      out[recipe.name] = 0;
-    }
-
-    recipe.materials.forEach((mat) => {
-      const name = data[mat.id];
-      if (!name) {
-        // console.log("Not found! :(", mat.id, recipe);
-      }
-      if (!out[name]) {
-        out[name] = 0;
-      }
-    });
-  });
-  return out;
-}
 export async function captureImage(x, y, width, height, filename) {
   const channels = 4;
   const {
@@ -63,7 +32,4 @@ export async function captureImage(x, y, width, height, filename) {
     await sharpImg.toFile(`./src/image_dump/${filename}.png`);
   }
   return await sharpImg.toBuffer();
-}
-export function wait(ms) {
-  return new Promise((r) => setTimeout(r, ms));
 }

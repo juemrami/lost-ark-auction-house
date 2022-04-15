@@ -12,11 +12,19 @@
     "**/.factorypath": true,
     "node_modules": true,
     "src/data/recipes.json": true,
-    "prisma/seed_from_sheets.ts": true
+    "prisma/seed_from_sheets.ts": true,
+    "src/AuctionExctractor.js": true,
+    "src/index.js": true,
+    "src/recipeScraper.js": true,
+    "src/utils.js": true
   },
   "hide-files.files": [
     "node_modules",
     "src/data/recipes.json",
-    "prisma/seed_from_sheets.ts"
+    "prisma/seed_from_sheets.ts",
+    "src/AuctionExctractor.js",
+    "src/index.js",
+    "src/recipeScraper.js",
+    "src/utils.js"
   ]
 }

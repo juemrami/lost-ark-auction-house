@@ -1,10 +1,12 @@
-import { wait } from "./helpers.js";
 import robot from "robotjs";
 import { range } from "d3-array";
 import { writeFileSync, readFileSync } from "fs";
 import sharp from "sharp";
 import Tesseract, { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
+export function wait(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
 
 const {
   moveMouse,

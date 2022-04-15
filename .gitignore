@@ -112,10 +112,11 @@ dist
 src/image_dump
 .vscode/
 tessdata_shreetest-master.zip
-./temp/image_dump
 models/eng.traineddata.gz
 src/data/_prices.json
 src/data/prices.json
 src/data/prices.json
 src/data/bad_data.json
 prisma/db_export_json.ts
+temp/**
+tools/**
