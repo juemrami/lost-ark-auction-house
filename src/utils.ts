@@ -1,13 +1,14 @@
+// import * as robot from "robotjs";
 import robot from "robotjs";
-import { range } from "d3-array";
 import { writeFileSync, readFileSync } from "fs";
-import sharp from "sharp";
-import Tesseract, { createWorker, createScheduler } from "tesseract.js";
+import { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
-export function wait(ms) {
+import sharp, { Sharp } from "sharp";
+// import * as _sharpjs from "sharp";
+export const wait = (ms: number) => {
   return new Promise((r) => setTimeout(r, ms));
-}
-
+};
+// const sharp = ;
 const {
   moveMouse,
   mouseClick,
@@ -18,7 +19,7 @@ const {
 } = robot;
 const SEARCH_BOX = { x: 1551, y: 243 };
 const LOADING_BOX = { x: 1060, y: 447, color: "111215" };
-const SEARCH_RESULT_BOX = {
+export const SEARCH_RESULT_BOX = {
   LOC: {
     // pixel
     x: 520,
@@ -68,9 +69,7 @@ const SEARCH_RESULT_BOX = {
 };
 
 const results: any = {};
-main();
-
-async function main() {
+export const main = async () => {
   let items = [
     "Guardian Stone Crystal",
     "Destruction Stone Crystal",
@@ -122,7 +121,7 @@ async function main() {
   console.log("results copied to keyboard.");
   console.log("run `yarn transfer` to push to db");
   process.exit();
-}
+};
 async function parseImage(image_buffer, worker, lang, dim?: any) {
   {
     // crop and zoom and flatten if needed for better resolution
@@ -134,7 +133,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
     //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
     // await image_buffer.toBuffer();
   }
-  // console.log("job started by ", worker.id);
+  console.log("job started by ", worker.id);
   await worker.initialize(lang);
   let {
     data: { text },
@@ -146,8 +145,8 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
       height: dim.height,
     },
   });
-  // console.log(`\tJob done ${worker.id}`);
-  // console.log(`-- ocr results: ${text.trim()}`);
+  console.log(`\tJob done ${worker.id}`);
+  console.log(`-- ocr results: ${text.trim()}`);
   if (/unit/.test(text)) {
     // check if is bundle size text
     return text;
@@ -162,10 +161,12 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
   }
 }
 
-async function extractPrices(image_buffer: Buffer) {
+export async function extractPrices(image_buffer: Buffer) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
-  for (const i in range(4)) {
+  for (const i in [0, 1, 2, 3]) {
+    console.log("worker created", i);
+
     worker_pool.push(
       createWorker({
         // logger: (m) => console.log(m),
@@ -180,7 +181,7 @@ async function extractPrices(image_buffer: Buffer) {
     await worker.load();
     await worker.loadLanguage("digits_comma");
   }
-  console.log("workers ready!");
+  // console.log("workers ready!");
   const getRecent = parseImage(
     image_buffer,
     worker_pool[0],
@@ -218,7 +219,12 @@ async function extractPrices(image_buffer: Buffer) {
   let cheapest_rem = await getCheapestRem;
   const killWorkers = ocr_scheduler.terminate();
   console.log(recent, lowest, cheapest_rem);
-  if (recent.length == 0 || lowest.length == 0) {
+  if (
+    recent.length == 0 ||
+    lowest.length == 0 ||
+    recent === undefined ||
+    lowest === undefined
+  ) {
     return undefined;
   }
   let time = Date();
@@ -242,6 +248,7 @@ async function extractPrices(image_buffer: Buffer) {
   //     }
   //   }
   // }
+  console.log("awaiting worker kill");
 
   await killWorkers;
   return {
@@ -284,7 +291,7 @@ async function searchMarket(item_name: string) {
   }
   return;
 }
-async function captureImage(
+export async function captureImage(
   dim: { x: number; y: number; width: number; height: number },
   filename?: string
 ) {
@@ -310,6 +317,7 @@ async function captureImage(
     .negate({ alpha: false })
     .toColorspace("b-w")
     .threshold(184)
+    .resize({ kernel: "lanczos3" })
     .withMetadata({ density: 150 })
     .png();
 

@@ -1,26 +1,24 @@
 {
-  "name": "lost-ark-calculator",
-  "version": "1.0.0",
+  "name": "lost-ark-auction-scanner",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "type": "module",
+  "exports": {
+    "./*": "./dist/*"
+  },
   "prisma": {
     "seed": "ts-node ./prisma/seed.ts"
   },
   "scripts": {
-    "test": "node src/test.js",
-    "ocr": "node src/auctionHouse.js",
-    "scan": "ts-node ./src/utils.ts",
-    "db seed": "ts-node prisma/seed.ts",
+    "build": "tsc",
+    "scan": "ts-node ./src/index.ts -P tsconfig.json",
     "transfer": "ts-node prisma/transfer_recent_scans.ts",
     "export": "ts-node prisma/db_export_json.ts"
   },
   "dependencies": {
     "@prisma/client": "^3.12.0",
     "clipboardy": "^3.0.0",
-    "core-js": "^3.21.1",
-    "d3": "^7.4.3",
-    "jimp": "^0.16.1",
     "jsdom": "^19.0.0",
     "node-fetch": "^3.2.0",
     "prisma": "^3.12.0",
@@ -29,9 +27,6 @@
     "tesseract.js": "^2.1.5"
   },
   "devDependencies": {
-    "@swc/cli": "^0.1.57",
-    "@swc/core": "^1.2.164",
-    "@types/d3": "^7.1.0",
     "@types/node": "*",
     "@types/sharp": "^0.30.0",
     "nodemon": "^2.0.15",
