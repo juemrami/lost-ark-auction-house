@@ -73,13 +73,13 @@ export const test = async () => {
   // 1350 x 569
   const img = await captureImage(INTEREST_PAGE.dim, "dbg_interest", true);
   const count = interest_list_size(img);
-
   // rectangle for a single item
   if (count === 0) {
     console.log("interest list empty or not on screen\n exiting...");
     process.exit();
   }
 
+  // if there is a 2nd page process it first
   if (getPixelColor(1027, 891) == NEXT_PAGE_INDICATOR) {
     console.log("moving to next page...");
     await grab_next_page();
@@ -103,6 +103,8 @@ export const test = async () => {
       entries.push(image);
     }
   }
+
+  // for all items detected, extract the individual item image
   for (let i = 0; i < count; i++) {
     const image = sharp(img, {
       raw: { width: 1350, height: 569, channels: 1 },
