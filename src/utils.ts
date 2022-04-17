@@ -67,12 +67,12 @@ export const SEARCH_RESULT_BOX = {
     width: 69,
     height: 20,
   },
-  BUNDLE_SIZE: {
-    x: 90,
-    y: 28,
-    width: 190,
-    height: 20,
-  },
+  // BUNDLE_SIZE: {
+  //   x: 90,
+  //   y: 28,
+  //   width: 190,
+  //   height: 20,
+  // },
   // ITEM_NAME: {
   //   x: 90,
   //   y: 6,
@@ -103,7 +103,7 @@ export const main = async () => {
   while (items.length > 0) {
     for (const item_name of items) {
       await searchMarket(item_name);
-      const item_image = await captureImage(
+      const item_image: any = await captureImage(
         SEARCH_RESULT_BOX.LOC
         // item_name // uncomment for image saving
       );
@@ -146,7 +146,7 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
     //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
     // await image_buffer.toBuffer();
   }
-  console.log("job started by ", worker.id);
+  // console.log("job started by ", worker.id);
   await worker.initialize(lang);
   let {
     data: { text },
@@ -158,8 +158,11 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
       height: dim.height,
     },
   });
-  console.log(`\tJob done ${worker.id}`);
-  console.log(`-- ocr results: ${text.trim()}`);
+  // console.log(`\tJob done ${worker.id}`);
+  // console.log(`-- ocr results: ${text.trim()}`);
+  if (lang === "eng") {
+    return text.trim();
+  }
   if (/unit/.test(text)) {
     // check if is bundle size text
     return text;
@@ -180,9 +183,8 @@ export async function extractPrices(
 ) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
-  for (const i in [0, 1, 2, 3]) {
-    console.log("worker created", i);
-
+  for (const i in Object.keys(region)) {
+    // console.log("worker created", i);
     worker_pool.push(
       createWorker({
         // logger: (m) => console.log(m),
@@ -195,7 +197,7 @@ export async function extractPrices(
   for (const worker of worker_pool) {
     // console.log("loading worker...", worker.id);
     await worker.load();
-    await worker.loadLanguage("digits_comma");
+    await worker.loadLanguage("digits_comma+eng");
   }
   // console.log("workers ready!");
   const getRecent = parseImage(
@@ -210,13 +212,10 @@ export async function extractPrices(
     "digits_comma",
     region.LOWEST_PRICE
   );
-  // const getBundle = parseImage(
-  //   image_buffer,
-  //   worker_pool[2],
-  //   "eng",
-  //   SEARCH_RESULT_BOX.BUNDLE_SIZE
-  // );
-  // let bundle = await getBundle;
+  let getName = undefined;
+  if (region.ITEM_NAME) {
+    getName = parseImage(image_buffer, worker_pool[4], "eng", region.ITEM_NAME);
+  }
   const getAvg = parseImage(
     image_buffer,
     worker_pool[2],
@@ -233,6 +232,8 @@ export async function extractPrices(
   let lowest = await getLowest;
   let avg_daily = await getAvg;
   let cheapest_rem = await getCheapestRem;
+  let item_name = await getName;
+  console.log(item_name);
   const killWorkers = ocr_scheduler.terminate();
   console.log(recent, lowest, cheapest_rem);
   if (
@@ -268,6 +269,7 @@ export async function extractPrices(
 
   await killWorkers;
   return {
+    item_name: item_name,
     price: recent_price,
     lowPrice: lowest_price,
     unitSize: bundle_size,
@@ -309,7 +311,8 @@ async function searchMarket(item_name: string) {
 }
 export async function captureImage(
   dim: { x: number; y: number; width: number; height: number },
-  filename?: string
+  filename?: string,
+  raw?: boolean
 ) {
   const channels = 4;
   const {
@@ -333,13 +336,16 @@ export async function captureImage(
     .negate({ alpha: false })
     .toColorspace("b-w")
     .threshold(184)
-    // .resize({ kernel: "lanczos3" })
-    .withMetadata({ density: 150 })
-    .png();
+    .resize({ kernel: "lanczos3" })
+    .withMetadata({ density: 150 });
 
   if (filename) {
-    img_buffer.toFile(`./temp/image_dump/${filename}.png`);
+    await img_buffer.png().toFile(`./temp/image_dump/${filename}.png`);
   }
-  // console.log("screenshot done");
-  return await img_buffer.toBuffer();
+  if (raw) {
+    // console.log(await img_buffer.raw().metadata());
+    return await img_buffer.raw().toBuffer();
+  }
+  console.log("screenshot done");
+  return await img_buffer.png().toBuffer();
 }
