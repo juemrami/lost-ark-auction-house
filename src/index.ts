@@ -1,5 +1,6 @@
-import { test } from "./scan_interest_list.js";
+import { test } from "./testing_grounds";
 import { main } from "./utils.js";
+import { scanInterestList } from "./interestListScanner.js";
 import prompt from "prompt";
 prompt.start();
 
@@ -7,8 +8,9 @@ console.log("Starting");
 
 console.log("Menu:");
 console.log("1: Main");
-console.log("2: Test");
-console.log("3: Quit");
+console.log("2: Interest List (Stable)");
+console.log("3: Test");
+console.log("4: Quit");
 
 await prompt.get(["choice"], async function (err, { choice }) {
   if (err) {
@@ -17,10 +19,10 @@ await prompt.get(["choice"], async function (err, { choice }) {
   console.log("Command-line input received:");
   if (choice == 1) {
     await main();
-  } else if (choice == 3) {
+  } else if (choice == 4) {
     process.exit();
-  } else {
-    await test();
-  }
+  } else if (choice == 2) {
+    await scanInterestList();
+  } else await test();
 });
 // process.exit();

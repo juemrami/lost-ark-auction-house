@@ -5,14 +5,14 @@ import Tesseract, { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
 import sharp, { Sharp } from "sharp";
 // import * as _sharpjs from "sharp";
-interface MarketResultRow {
+export interface MarketResultRow {
   RECENT_PRICE: ScreenShotRegion;
   LOWEST_PRICE: ScreenShotRegion;
   CHEAPEST_REM: ScreenShotRegion;
   AVG_DAILY_PRICE: ScreenShotRegion;
   ITEM_NAME?: ScreenShotRegion;
 }
-interface ScreenShotRegion {
+export interface ScreenShotRegion {
   x: number;
   y: number;
   width: number;

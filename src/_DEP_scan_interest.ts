@@ -68,12 +68,22 @@ export const test = async () => {
   await wait(2000);
   console.log("...taking sceenshot!");
   const entries = [];
-
+  // take SS 1
+  // check for 2 pages ...
+  //    if 2nd page{
+  //      take SS 2
+  //    }
+  //  count num of item in both pages.
+  //  use extract with a rectangle based on count
+  //   and supply an offset
+  //
+  //
+  //
   // whole page of items
   // 1350 x 569
   const img = await captureImage(INTEREST_PAGE.dim, "dbg_interest", true);
   const count = interest_list_size(img);
-  // rectangle for a single item
+
   if (count === 0) {
     console.log("interest list empty or not on screen\n exiting...");
     process.exit();
