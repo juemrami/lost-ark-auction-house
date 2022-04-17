@@ -1,7 +1,7 @@
 // import * as robot from "robotjs";
 import robot from "robotjs";
 import { writeFileSync, readFileSync } from "fs";
-import { createWorker, createScheduler } from "tesseract.js";
+import Tesseract, { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
 import sharp, { Sharp } from "sharp";
 // import * as _sharpjs from "sharp";
@@ -80,7 +80,8 @@ export const SEARCH_RESULT_BOX = {
   //   height: 20,
   // },
 };
-
+const NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
+const NUM_CHARS = "0123456789.";
 const results: any = {};
 export const main = async () => {
   let items = [
@@ -148,6 +149,15 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
   }
   // console.log("job started by ", worker.id);
   await worker.initialize(lang);
+  if (lang === "eng") {
+    await worker.setParameters({
+      tessedit_char_whitelist: NAME_CHARS,
+    });
+  } else {
+    await worker.setParameters({
+      tessedit_char_whitelist: NUM_CHARS,
+    });
+  }
   let {
     data: { text },
   } = await worker.recognize(image_buffer, {
@@ -251,22 +261,6 @@ export async function extractPrices(
   avg_daily = Number(avg_daily);
   cheapest_rem = Number(cheapest_rem);
 
-  // implement this better.
-  // or remove and hardcode bundle sizes
-  // if (bundle.length > 0) {
-  //   const bundle_text = bundle.split(" ");
-  //   for (let i = 0; i < bundle_text.length; i++) {
-  //     const word = bundle_text[i];
-  //     if (word.toLowerCase().includes("units")) {
-  //       bundle_size = Number(bundle_text[i - 1].trim());
-  //       // lowest_price = lowest_price / bundle_size;
-  //       // recent_price = recent_price / bundle_size;
-  //       // avg_daily = Number((avg_daily / bundle_size).toFixed(3));
-  //     }
-  //   }
-  // }
-  console.log("awaiting worker kill");
-
   await killWorkers;
   return {
     item_name: item_name,
@@ -335,7 +329,7 @@ export async function captureImage(
     .flatten()
     .negate({ alpha: false })
     .toColorspace("b-w")
-    .threshold(184)
+    .threshold(198)
     .resize({ kernel: "lanczos3" })
     .withMetadata({ density: 150 });
 

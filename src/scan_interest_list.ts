@@ -58,14 +58,18 @@ export const test = async () => {
   console.log("interest list scrape starting...");
   console.log("focus your Lost Ark window...");
   await wait(2000);
-  console.log("...commencing. dont touch mouse!");
+  console.log("...taking sceenshot!");
 
   // whole page of items
   // 1350 x 569
   let img = await captureImage(INTEREST_PAGE.dim, "dbg_interest", true);
-  let count = count_results(img);
+  let count = interest_list_size(img);
 
   // rectangle for a single item
+  if (count === 0) {
+    console.log("interest list empty or not on screen\n exiting...");
+    process.exit();
+  }
   const entries = [];
   for (let i = 0; i < count; i++) {
     const image = sharp(img, {
@@ -82,33 +86,25 @@ export const test = async () => {
     await image.toFile(`coop_${i}.png`);
     entries.push(image);
   }
-  // const item_result_box = sharp(img, {
-  //   raw: { width: 1350, height: 569, channels: 1 },
-  // })
-  //   .extract({
-  //     top: 0,
-  //     left: 0,
-  //     height: SEARCH_RESULT_BOX.LOC.height,
-  //     width: INTEREST_PAGE.dim.width,
-  //   })
-  //   .png()
-  //   .withMetadata({ density: 150 });
-  // await item_result_box.toFile("coop.png");
   const results = {};
   const data = [];
   for (const item_result_box of entries) {
-    data.push(extractPrices(await item_result_box.toBuffer(), INTEREST_PAGE));
+    data.push(
+      await extractPrices(await item_result_box.toBuffer(), INTEREST_PAGE)
+    );
   }
   for (const scan_result of data) {
-    await scan_result;
     let item_name = scan_result.item_name;
     if (item_name) {
+      // delete scan_result.item_name;
       results[item_name] = scan_result;
     } else {
       console.log("missing item name for ", scan_result);
     }
   }
-  console.log(results);
+  // console.log(results);
+  save_results(results);
+  process.exit();
 };
 
 const save_results = (results) => {
@@ -127,14 +123,14 @@ const save_results = (results) => {
   console.log("run `yarn transfer` to push to db");
 };
 
-const count_results = (img) => {
+const interest_list_size = (img) => {
   let count = 0;
   let index = 0;
   do {
     index = INTEREST_PAGE.dim.width * (pin.y + count * gap) + pin.x;
     let test = img[index];
-    console.log(img.length, index);
-    console.log(test);
+    // console.log(img.length, index);
+    // console.log(test);
     if (test > 128 || test == undefined) {
       break;
     }
