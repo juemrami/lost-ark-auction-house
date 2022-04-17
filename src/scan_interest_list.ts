@@ -1,6 +1,5 @@
 import sharp, { Region } from "sharp";
 import { OutputInfo } from "sharp";
-import { price_data } from "@prisma/client";
 import {
   wait,
   captureImage,
@@ -9,11 +8,20 @@ import {
 } from "./utils.js";
 import { readFileSync, writeFileSync } from "fs";
 import clipboard from "clipboardy";
-
+import robot from "robotjs";
+const {
+  moveMouse,
+  mouseClick,
+  keyTap,
+  getPixelColor,
+  moveMouseSmooth,
+  screen,
+} = robot;
 interface sharpObj {
   data: Buffer;
   info: OutputInfo;
 }
+const NEXT_PAGE_INDICATOR = "64859a";
 const gap = 57;
 const pin = { x: 18, y: 28 };
 const INTEREST_PAGE = {
@@ -56,21 +64,45 @@ const INTEREST_PAGE = {
 };
 export const test = async () => {
   console.log("interest list scrape starting...");
-  console.log("focus your Lost Ark window...");
+  console.log("focus your Lost Ark window within 2 seconds...");
   await wait(2000);
   console.log("...taking sceenshot!");
+  const entries = [];
 
   // whole page of items
   // 1350 x 569
-  let img = await captureImage(INTEREST_PAGE.dim, "dbg_interest", true);
-  let count = interest_list_size(img);
+  const img = await captureImage(INTEREST_PAGE.dim, "dbg_interest", true);
+  const count = interest_list_size(img);
 
   // rectangle for a single item
   if (count === 0) {
     console.log("interest list empty or not on screen\n exiting...");
     process.exit();
   }
-  const entries = [];
+
+  if (getPixelColor(1027, 891) == NEXT_PAGE_INDICATOR) {
+    console.log("moving to next page...");
+    await grab_next_page();
+    console.log("...taking sceenshot!");
+    await wait(565);
+    let page_2_img = await captureImage(INTEREST_PAGE.dim, undefined, true);
+    let page_2_count = interest_list_size(page_2_img);
+    console.log("you can move mouse now");
+    for (let i = 0; i < page_2_count; i++) {
+      const image = sharp(page_2_img, {
+        raw: { width: 1350, height: 569, channels: 1 },
+      })
+        .extract({
+          top: 0 + i * gap,
+          left: 0,
+          height: SEARCH_RESULT_BOX.LOC.height,
+          width: INTEREST_PAGE.dim.width,
+        })
+        .png()
+        .withMetadata({ density: 150 });
+      entries.push(image);
+    }
+  }
   for (let i = 0; i < count; i++) {
     const image = sharp(img, {
       raw: { width: 1350, height: 569, channels: 1 },
@@ -83,7 +115,7 @@ export const test = async () => {
       })
       .png()
       .withMetadata({ density: 150 });
-    await image.toFile(`coop_${i}.png`);
+    // await image.toFile(`coop_${i}.png`);
     entries.push(image);
   }
   const results = {};
@@ -138,6 +170,11 @@ const interest_list_size = (img) => {
   } while (count < 10);
   console.log("items: ", count);
   return count;
+};
+const grab_next_page = async () => {
+  moveMouse(1027, 891);
+  // await wait(20);
+  mouseClick();
 };
 function split_results_image(image) {
   //first count the amount of results in the page

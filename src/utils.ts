@@ -21,7 +21,6 @@ interface ScreenShotRegion {
 export const wait = (ms: number) => {
   return new Promise((r) => setTimeout(r, ms));
 };
-// const sharp = ;
 const {
   moveMouse,
   mouseClick,
@@ -83,6 +82,7 @@ export const SEARCH_RESULT_BOX = {
 const NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
 const NUM_CHARS = "0123456789.";
 const results: any = {};
+
 export const main = async () => {
   let items = [
     "Guardian Stone Crystal",
