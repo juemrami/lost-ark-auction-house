@@ -55,20 +55,24 @@ export const scanInterestList = async () => {
   console.log("'Interest List' scrape starting...");
   console.log("focus your Lost Ark window within 2 seconds...");
   await wait(2000);
-  console.log("...taking screenshot!");
+  console.log("Starting now.");
+
   // 1350 x 569
   let counts: number[] = [];
   const pages: Buffer[] = [];
+  let current_time = Date();
+  console.log("Refreshing page...");
+  await refresh_list();
   do {
     if (counts[0]) {
       console.log("moving to next page...");
-      grab_next_page();
-      await wait(650);
+      await grab_next_page();
     }
-    console.log("...taking screenshot!");
+    console.log("...Taking screenshot!");
     const screenshot = await captureImage(
       INTEREST_PAGE.dim,
       "dbg_interest",
+
       true
     );
     pages.push(screenshot);
@@ -103,13 +107,14 @@ export const scanInterestList = async () => {
 
   for (const scan_result of data) {
     let item_name = scan_result.item_name;
+    scan_result.time = current_time;
     if (item_name) {
       results[item_name] = scan_result;
     } else {
       console.log("missing item name for ", scan_result);
     }
   }
-  //   console.log(results);
+  console.log(results);
   save_results(results);
   process.exit();
 };
@@ -187,6 +192,13 @@ const interest_list_size = (img) => {
 };
 const grab_next_page = async () => {
   moveMouse(1027, 891);
-  // await wait(20);
+  await wait(20);
   mouseClick();
+  await wait(500);
+};
+const refresh_list = async () => {
+  moveMouse(460, 925);
+  await wait(20);
+  mouseClick();
+  await wait(900);
 };
