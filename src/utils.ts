@@ -5,6 +5,19 @@ import { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
 import sharp, { Sharp } from "sharp";
 // import * as _sharpjs from "sharp";
+interface MarketResultRow {
+  RECENT_PRICE: ScreenShotRegion;
+  LOWEST_PRICE: ScreenShotRegion;
+  CHEAPEST_REM: ScreenShotRegion;
+  AVG_DAILY_PRICE: ScreenShotRegion;
+  ITEM_NAME?: ScreenShotRegion;
+}
+interface ScreenShotRegion {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
 export const wait = (ms: number) => {
   return new Promise((r) => setTimeout(r, ms));
 };
@@ -60,12 +73,12 @@ export const SEARCH_RESULT_BOX = {
     width: 190,
     height: 20,
   },
-  ITEM_NAME: {
-    x: 90,
-    y: 6,
-    width: 200,
-    height: 20,
-  },
+  // ITEM_NAME: {
+  //   x: 90,
+  //   y: 6,
+  //   width: 200,
+  //   height: 20,
+  // },
 };
 
 const results: any = {};
@@ -94,7 +107,7 @@ export const main = async () => {
         SEARCH_RESULT_BOX.LOC
         // item_name // uncomment for image saving
       );
-      results[item_name] = extractPrices(item_image);
+      results[item_name] = extractPrices(item_image, SEARCH_RESULT_BOX);
     }
     for (const item_name of items) {
       results[item_name] = await results[item_name];
@@ -161,7 +174,10 @@ async function parseImage(image_buffer, worker, lang, dim?: any) {
   }
 }
 
-export async function extractPrices(image_buffer: Buffer) {
+export async function extractPrices(
+  image_buffer: Buffer,
+  region?: MarketResultRow
+) {
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
   for (const i in [0, 1, 2, 3]) {
@@ -186,13 +202,13 @@ export async function extractPrices(image_buffer: Buffer) {
     image_buffer,
     worker_pool[0],
     "digits_comma",
-    SEARCH_RESULT_BOX.RECENT_PRICE
+    region.RECENT_PRICE
   );
   const getLowest = parseImage(
     image_buffer,
     worker_pool[1],
     "digits_comma",
-    SEARCH_RESULT_BOX.LOWEST_PRICE
+    region.LOWEST_PRICE
   );
   // const getBundle = parseImage(
   //   image_buffer,
@@ -205,13 +221,13 @@ export async function extractPrices(image_buffer: Buffer) {
     image_buffer,
     worker_pool[2],
     "digits_comma",
-    SEARCH_RESULT_BOX.AVG_DAILY_PRICE
+    region.AVG_DAILY_PRICE
   );
   const getCheapestRem = parseImage(
     image_buffer,
     worker_pool[3],
     "digits_comma",
-    SEARCH_RESULT_BOX.CHEAPEST_REM
+    region.CHEAPEST_REM
   );
   let recent = await getRecent;
   let lowest = await getLowest;
@@ -317,7 +333,7 @@ export async function captureImage(
     .negate({ alpha: false })
     .toColorspace("b-w")
     .threshold(184)
-    .resize({ kernel: "lanczos3" })
+    // .resize({ kernel: "lanczos3" })
     .withMetadata({ density: 150 })
     .png();
 
