@@ -194,11 +194,14 @@ const grab_next_page = async () => {
   moveMouse(1027, 891);
   await wait(20);
   mouseClick();
-  await wait(500);
+  await wait(1000);
+  return;
 };
 const refresh_list = async () => {
   moveMouse(460, 925);
-  await wait(20);
+  // await wait(20);
   mouseClick();
-  await wait(900);
+  mouseClick();
+  await wait(1000);
+  return;
 };
