@@ -194,6 +194,7 @@ export async function extractPrices(
   const ocr_scheduler = createScheduler();
   const worker_pool = [];
   for (const i in Object.keys(region)) {
+    // for (let i = 0; i++; i < 2) {
     // console.log("worker created", i);
     worker_pool.push(
       createWorker({
@@ -224,17 +225,17 @@ export async function extractPrices(
   );
   let getName = undefined;
   if (region.ITEM_NAME) {
-    getName = parseImage(image_buffer, worker_pool[4], "eng", region.ITEM_NAME);
+    getName = parseImage(image_buffer, worker_pool[2], "eng", region.ITEM_NAME);
   }
   const getAvg = parseImage(
     image_buffer,
-    worker_pool[2],
+    worker_pool[3],
     "digits_comma",
     region.AVG_DAILY_PRICE
   );
   const getCheapestRem = parseImage(
     image_buffer,
-    worker_pool[3],
+    worker_pool[4],
     "digits_comma",
     region.CHEAPEST_REM
   );

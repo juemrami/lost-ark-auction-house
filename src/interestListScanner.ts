@@ -7,10 +7,11 @@ import {
   SEARCH_RESULT_BOX,
   extractPrices,
 } from "./utils.js";
-import { readFileSync, writeFileSync } from "fs";
+import { cp, readFileSync, writeFileSync } from "fs";
 import clipboard from "clipboardy";
 import robot from "robotjs";
-const { moveMouse, mouseClick, getPixelColor, moveMouseSmooth } = robot;
+const { moveMouse, mouseClick, getPixelColor, moveMouseSmooth, getMousePos } =
+  robot;
 const ITEM_GAP_DISTANCE = 57;
 const PINNED_ITEM_LOGO = { x: 18, y: 28 };
 const INTEREST_PAGE = {
@@ -171,7 +172,20 @@ const save_results = (results) => {
 };
 const next_page_available = () => {
   const clickable_arrow_color = "64859a";
-  return getPixelColor(1027, 891) == clickable_arrow_color;
+  const color_difference_threshold = 30;
+  const similarity_score = (hex_color_1, hex_color_2) => {
+    return Math.abs(parseInt(hex_color_1, 16) - parseInt(hex_color_2, 16));
+  };
+  if (getMousePos() == { x: 1027, y: 891 }) {
+    moveMouse(1027, 300);
+  }
+  console.log(getPixelColor(1027, 891));
+
+  const res =
+    similarity_score(getPixelColor(1027, 891), clickable_arrow_color) <=
+    color_difference_threshold;
+  res ?? console.log("additional page detected.");
+  return res;
 };
 const interest_list_size = (img) => {
   let count = 0;
@@ -190,11 +204,14 @@ const interest_list_size = (img) => {
   console.log("items on page: ", count);
   return count;
 };
+let color = "#3d3d3d3";
 const grab_next_page = async () => {
   moveMouse(1027, 891);
   await wait(20);
   mouseClick();
   await wait(1000);
+  moveMouse(1027, 200);
+
   return;
 };
 const refresh_list = async () => {
@@ -202,6 +219,6 @@ const refresh_list = async () => {
   // await wait(20);
   mouseClick();
   mouseClick();
-  await wait(1000);
+  await wait(500);
   return;
 };
