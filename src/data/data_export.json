@@ -1133,6 +1133,335 @@
             "date_time": "2022-04-17T19:26:11.000Z",
             "avg_day_price": "121.8",
             "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "125",
+            "recent_price": "121",
+            "date_time": "2022-04-17T19:43:19.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "122",
+            "recent_price": "123",
+            "date_time": "2022-04-17T20:12:27.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 11
+        },
+        {
+            "lowest_price": "123",
+            "recent_price": "122",
+            "date_time": "2022-04-17T20:31:26.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "123",
+            "recent_price": "122",
+            "date_time": "2022-04-17T20:53:17.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "119",
+            "recent_price": "119",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "120",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "115",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 126
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "122",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "120",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "121.8",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "129",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 439
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "131",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 1810
+        },
+        {
+            "lowest_price": "138",
+            "recent_price": "138",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 43
+        },
+        {
+            "lowest_price": "135",
+            "recent_price": "135",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 18
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "134",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "139",
+            "recent_price": "140",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "132",
+            "recent_price": "132",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "133",
+            "recent_price": "133",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 22
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "131",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 42
+        },
+        {
+            "lowest_price": "137",
+            "recent_price": "138",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "126.1",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "132",
+            "recent_price": "134",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "134",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "135",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "131",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "129",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 18
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "125",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 28
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "125",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 47
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "129",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "130.5",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "133",
+            "recent_price": "133",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 178
+        },
+        {
+            "lowest_price": "132",
+            "recent_price": "132",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 144
+        },
+        {
+            "lowest_price": "125",
+            "recent_price": "125",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "130",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "130",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 420
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "130",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 254
+        },
+        {
+            "lowest_price": "125",
+            "recent_price": "127",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "131.8",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "127",
+            "recent_price": "127",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 90
+        },
+        {
+            "lowest_price": "125",
+            "recent_price": "125",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "126",
+            "recent_price": "126",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "123",
+            "recent_price": "123",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "123",
+            "recent_price": "123",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-21T16:59:07.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 47
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "130",
+            "date_time": "2022-04-21T18:56:02.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "129",
+            "date_time": "2022-04-21T19:13:31.000Z",
+            "avg_day_price": "131.4",
+            "cheapest_rem": 50
+        },
+        {
+            "lowest_price": "119",
+            "recent_price": "119",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "127.9",
+            "cheapest_rem": 196
+        },
+        {
+            "lowest_price": "119",
+            "recent_price": "119",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "127.9",
+            "cheapest_rem": 92
+        },
+        {
+            "lowest_price": "126",
+            "recent_price": "126",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "127.9",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "120",
+            "recent_price": "86",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "127.9",
+            "cheapest_rem": 8
         }
     ],
     "Solar Grace": [
@@ -2430,6 +2759,412 @@
             "date_time": "2022-04-17T19:25:53.000Z",
             "avg_day_price": "34.4",
             "cheapest_rem": 143
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T19:42:57.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 103
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T20:12:15.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 80
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-17T20:31:04.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-17T20:52:55.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "34",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 24
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "32",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "31",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "31",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 74
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "34",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "34.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 55
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 30
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 259
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "33",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 49
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 396
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 62
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 2374
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "33",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 34
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "38",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 22
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "34",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "34",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "24",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 193
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "35",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "36",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 229
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 69
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "33.5",
+            "cheapest_rem": 279
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 1529
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "36",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "33",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 212
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 79
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "36",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "35",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "34.7",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 1378
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 584
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "30",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 228
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 485
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 456
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "39",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 1250
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "39",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 273
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 400
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 50
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 422
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 158
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 171
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "33",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 77
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 301
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "35",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 83
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 11
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "34.9",
+            "cheapest_rem": 24
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "35.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "35.4",
+            "cheapest_rem": 134
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "35.4",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "35.4",
+            "cheapest_rem": 895
         }
     ],
     "Solar Blessing": [
@@ -3727,6 +4462,335 @@
             "date_time": "2022-04-17T19:26:25.000Z",
             "avg_day_price": "152.2",
             "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "144",
+            "recent_price": "144",
+            "date_time": "2022-04-17T19:43:35.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 24
+        },
+        {
+            "lowest_price": "153",
+            "recent_price": "155",
+            "date_time": "2022-04-17T20:12:36.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "153",
+            "recent_price": "153",
+            "date_time": "2022-04-17T20:31:36.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "153",
+            "recent_price": "153",
+            "date_time": "2022-04-17T20:53:28.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "149",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 28
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "144",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "141",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "146",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "144",
+            "recent_price": "148",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "152.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "143",
+            "recent_price": "143",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "143",
+            "recent_price": "145",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "145",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 47
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "150",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "148",
+            "recent_price": "150",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "149",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 58
+        },
+        {
+            "lowest_price": "160",
+            "recent_price": "163",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "163",
+            "recent_price": "161",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 311
+        },
+        {
+            "lowest_price": "156",
+            "recent_price": "158",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "174",
+            "recent_price": "176",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "147.4",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "172",
+            "recent_price": "172",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 26
+        },
+        {
+            "lowest_price": "162",
+            "recent_price": "163",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "161",
+            "recent_price": "163",
+            "date_time": "2022-04-19T03:11:27.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "162",
+            "recent_price": "164",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "166",
+            "recent_price": "167",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "166",
+            "recent_price": "166",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "167",
+            "recent_price": "166",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 122
+        },
+        {
+            "lowest_price": "169",
+            "recent_price": "169",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "153.2",
+            "cheapest_rem": 105
+        },
+        {
+            "lowest_price": "159",
+            "recent_price": "159",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 70
+        },
+        {
+            "lowest_price": "162",
+            "recent_price": "162",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 63
+        },
+        {
+            "lowest_price": "161",
+            "recent_price": "163",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "160",
+            "recent_price": "160",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "159",
+            "recent_price": "159",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "160",
+            "recent_price": "160",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 84
+        },
+        {
+            "lowest_price": "158",
+            "recent_price": "161",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "161.5",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "162",
+            "recent_price": "162",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 66
+        },
+        {
+            "lowest_price": "154",
+            "recent_price": "155",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "149",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "146",
+            "recent_price": "146",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "146",
+            "recent_price": "147",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 18
+        },
+        {
+            "lowest_price": "150",
+            "recent_price": "150",
+            "date_time": "2022-04-21T16:59:07.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 17
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "122",
+            "date_time": "2022-04-21T18:20:55.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "130",
+            "date_time": "2022-04-21T18:56:02.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 76
+        },
+        {
+            "lowest_price": "122",
+            "recent_price": "122",
+            "date_time": "2022-04-21T19:13:31.000Z",
+            "avg_day_price": "158.9",
+            "cheapest_rem": 29
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "142.5",
+            "cheapest_rem": 84
+        },
+        {
+            "lowest_price": "119",
+            "recent_price": "119",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "142.5",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "114",
+            "recent_price": "115",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "142.5",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "125",
+            "recent_price": "125",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "142.5",
+            "cheapest_rem": 194
         }
     ],
     "Solar Protection": [
@@ -5017,6 +6081,335 @@
             "date_time": "2022-04-17T19:26:32.000Z",
             "avg_day_price": "227.8",
             "cheapest_rem": 441
+        },
+        {
+            "lowest_price": "223",
+            "recent_price": "223",
+            "date_time": "2022-04-17T19:43:43.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "228",
+            "recent_price": "230",
+            "date_time": "2022-04-17T20:12:41.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "228",
+            "recent_price": "130",
+            "date_time": "2022-04-17T20:31:42.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "228",
+            "recent_price": "130",
+            "date_time": "2022-04-17T20:53:34.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "228",
+            "recent_price": "228",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "224",
+            "recent_price": "228",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "219",
+            "recent_price": "220",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "220",
+            "recent_price": "219",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 18
+        },
+        {
+            "lowest_price": "215",
+            "recent_price": "225",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "227.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "224",
+            "recent_price": "224",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "222",
+            "recent_price": "222",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "229",
+            "recent_price": "229",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 87
+        },
+        {
+            "lowest_price": "228",
+            "recent_price": "230",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "232",
+            "recent_price": "234",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "233",
+            "recent_price": "234",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "261",
+            "recent_price": "264",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "267",
+            "recent_price": "267",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "264",
+            "recent_price": "265",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 15
+        },
+        {
+            "lowest_price": "260",
+            "recent_price": "260",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "222.7",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "258",
+            "recent_price": "259",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 15
+        },
+        {
+            "lowest_price": "245",
+            "recent_price": "245",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "247",
+            "recent_price": "247",
+            "date_time": "2022-04-19T03:11:27.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "248",
+            "recent_price": "248",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "254",
+            "recent_price": "254",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 34
+        },
+        {
+            "lowest_price": "252",
+            "recent_price": "252",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "250",
+            "recent_price": "250",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "271",
+            "recent_price": "271",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "242.9",
+            "cheapest_rem": 68
+        },
+        {
+            "lowest_price": "265",
+            "recent_price": "265",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "275",
+            "recent_price": "275",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 89
+        },
+        {
+            "lowest_price": "272",
+            "recent_price": "273",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "280",
+            "recent_price": "280",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 53
+        },
+        {
+            "lowest_price": "280",
+            "recent_price": "280",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 50
+        },
+        {
+            "lowest_price": "278",
+            "recent_price": "278",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 34
+        },
+        {
+            "lowest_price": "278",
+            "recent_price": "278",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "251.8",
+            "cheapest_rem": 37
+        },
+        {
+            "lowest_price": "270",
+            "recent_price": "270",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "263",
+            "recent_price": "260",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 61
+        },
+        {
+            "lowest_price": "264",
+            "recent_price": "264",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "260",
+            "recent_price": "260",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 33
+        },
+        {
+            "lowest_price": "265",
+            "recent_price": "265",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 90
+        },
+        {
+            "lowest_price": "280",
+            "recent_price": "280",
+            "date_time": "2022-04-21T16:59:07.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 242
+        },
+        {
+            "lowest_price": "220",
+            "recent_price": "220",
+            "date_time": "2022-04-21T18:20:55.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "234",
+            "recent_price": "234",
+            "date_time": "2022-04-21T18:56:02.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 19
+        },
+        {
+            "lowest_price": "230",
+            "recent_price": "236",
+            "date_time": "2022-04-21T19:13:31.000Z",
+            "avg_day_price": "265.3",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "254",
+            "recent_price": "255",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "256.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "240",
+            "recent_price": "240",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "256.7",
+            "cheapest_rem": 101
+        },
+        {
+            "lowest_price": "229",
+            "recent_price": "230",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "256.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "242",
+            "recent_price": "242",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "256.7",
+            "cheapest_rem": 16
         }
     ],
     "Honor Leapstone": [
@@ -6307,6 +7700,412 @@
             "date_time": "2022-04-17T19:25:59.000Z",
             "avg_day_price": "32.7",
             "cheapest_rem": 3128
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T19:43:03.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 173
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T20:12:19.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 378
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T20:31:15.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T20:53:06.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 525
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 152
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 4212
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 284
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "35",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 4644
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 266
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 234
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 1767
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 1218
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 63
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 556
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 832
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "34.2",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "40",
+            "recent_price": "40",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 5407
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "40",
+            "recent_price": "39",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 3257
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "40",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 45
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 60
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 56
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 95
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "35.3",
+            "cheapest_rem": 62
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "37",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 3052
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 1476
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 45
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "34",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "37.3",
+            "cheapest_rem": 115
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "36",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 336
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "39",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 3522
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 28
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "37",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 350
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "35",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 367
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 53
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 187
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 162
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 1423
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "36",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 435
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "36",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 289
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "37",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 71
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 135
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "35",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 29
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "37.4",
+            "cheapest_rem": 7915
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "35.2",
+            "cheapest_rem": 234
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "35.2",
+            "cheapest_rem": 1422
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "35.2",
+            "cheapest_rem": 2273
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "35.2",
+            "cheapest_rem": 3654
         }
     ],
     "Caldarr Fusion Material": [
@@ -6432,6 +8231,412 @@
             "date_time": "2022-04-17T19:25:31.000Z",
             "avg_day_price": "11.4",
             "cheapest_rem": 1491
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "11",
+            "date_time": "2022-04-17T19:42:29.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 106
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "13",
+            "date_time": "2022-04-17T20:11:59.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 242
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "13",
+            "date_time": "2022-04-17T20:30:48.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 123
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "13",
+            "date_time": "2022-04-17T20:52:38.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 123
+        },
+        {
+            "lowest_price": "14",
+            "recent_price": "14",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 934
+        },
+        {
+            "lowest_price": "14",
+            "recent_price": "14",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 904
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "14",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "13",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 83
+        },
+        {
+            "lowest_price": "14",
+            "recent_price": "14",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "11.4",
+            "cheapest_rem": 3138
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 7395
+        },
+        {
+            "lowest_price": "14",
+            "recent_price": "15",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 104
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 632
+        },
+        {
+            "lowest_price": "13",
+            "recent_price": "14",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 54
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 2558
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "15",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 2280
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 151
+        },
+        {
+            "lowest_price": "14",
+            "recent_price": "14",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 93
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "14",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 3462
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 3817
+        },
+        {
+            "lowest_price": "18",
+            "recent_price": "19",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "13.4",
+            "cheapest_rem": 162
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 1356
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 621
+        },
+        {
+            "lowest_price": "18",
+            "recent_price": "18",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 2175
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "18",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 144
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 67
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 561
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 549
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "14.9",
+            "cheapest_rem": 4808
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "16",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 20
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 92
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "17",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 17351
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 143
+        },
+        {
+            "lowest_price": "16",
+            "recent_price": "16",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 244
+        },
+        {
+            "lowest_price": "12",
+            "recent_price": "12",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "16.9",
+            "cheapest_rem": 78
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 2811
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 2372
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 3089
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "15",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 4230
+        },
+        {
+            "lowest_price": "15",
+            "recent_price": "14",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 3847
+        },
+        {
+            "lowest_price": "18",
+            "recent_price": "19",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 40
+        },
+        {
+            "lowest_price": "18",
+            "recent_price": "18",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 1641
+        },
+        {
+            "lowest_price": "17",
+            "recent_price": "19",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 115
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 2523
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 39065
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 297
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 232
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "20",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 67
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 40359
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 441
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "20",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 206
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 769
+        },
+        {
+            "lowest_price": "18",
+            "recent_price": "18",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "16",
+            "cheapest_rem": 332
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "17.8",
+            "cheapest_rem": 1991
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "17.8",
+            "cheapest_rem": 43666
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "18",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "17.8",
+            "cheapest_rem": 44555
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "17.8",
+            "cheapest_rem": 41294
         }
     ],
     "Ancient Relic": [
@@ -6525,6 +8730,370 @@
             "date_time": "2022-04-17T19:25:48.000Z",
             "avg_day_price": "32.7",
             "cheapest_rem": 1595
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-17T19:42:50.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-17T20:12:11.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 1643
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-17T20:31:09.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 1629
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-17T20:53:00.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 1629
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "31",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 39
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 1662
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "32.7",
+            "cheapest_rem": 1715
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 85
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 2447
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 100
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 82
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "31.3",
+            "cheapest_rem": 40
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 223
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "27",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 155
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 161
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 206
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 201
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 194
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "30.5",
+            "cheapest_rem": 668
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 62
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 40
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 19
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 71
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 302
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "28",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 84
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 39
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "32",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 209
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "32",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 228
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 49
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 277
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "33",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 11
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 398
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 694
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 699
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 721
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 721
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 769
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "29.7",
+            "cheapest_rem": 63
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "31.8",
+            "cheapest_rem": 314
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "31.8",
+            "cheapest_rem": 408
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "35",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "31.8",
+            "cheapest_rem": 416
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "31.8",
+            "cheapest_rem": 39
         }
     ],
     "Rare Relic": [
@@ -6618,6 +9187,370 @@
             "date_time": "2022-04-17T19:25:26.000Z",
             "avg_day_price": "9.5",
             "cheapest_rem": 115
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "10",
+            "date_time": "2022-04-17T19:42:22.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 50904
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "10",
+            "date_time": "2022-04-17T20:11:56.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 50305
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "10",
+            "date_time": "2022-04-17T20:30:42.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 50322
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "10",
+            "date_time": "2022-04-17T20:52:32.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 50322
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "9",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 47732
+        },
+        {
+            "lowest_price": "10",
+            "recent_price": "10",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 47642
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "10",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 65
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 900
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "9.5",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 6912
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 5893
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 7134
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 23431
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 74
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 25282
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "9.300000000000001",
+            "cheapest_rem": 27696
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "9",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 52
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25820
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25668
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25562
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25334
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25223
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 25247
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 37630
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 35626
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 36473
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 37667
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 37021
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 36097
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 34598
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 33172
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 29153
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 27956
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "9",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 34
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 14258
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 13843
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 12981
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 12473
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 10815
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 10780
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 10747
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 12967
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 15774
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 14602
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 14156
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 14094
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 12578
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "8.800000000000001",
+            "cheapest_rem": 11374
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "8.9",
+            "cheapest_rem": 9944
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "8.9",
+            "cheapest_rem": 8550
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "8.9",
+            "cheapest_rem": 8355
+        },
+        {
+            "lowest_price": "9",
+            "recent_price": "9",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "8.9",
+            "cheapest_rem": 5932
         }
     ],
     "Grudge Engraving Recipe": [
@@ -6711,6 +9644,293 @@
             "date_time": "2022-04-17T19:26:40.000Z",
             "avg_day_price": "10687.4",
             "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "10250",
+            "recent_price": "10000",
+            "date_time": "2022-04-17T19:43:51.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "9900",
+            "recent_price": "10000",
+            "date_time": "2022-04-17T20:12:53.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "10200",
+            "recent_price": "10000",
+            "date_time": "2022-04-17T20:31:53.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "10200",
+            "recent_price": "10000",
+            "date_time": "2022-04-17T20:53:45.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "10749",
+            "recent_price": "11000",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "10749",
+            "recent_price": "11000",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "10749",
+            "recent_price": "11000",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "10730",
+            "recent_price": "10750",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "11000",
+            "recent_price": "10999",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "10687.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "14688",
+            "recent_price": "14995",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "14688",
+            "recent_price": "14995",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13699",
+            "recent_price": "13750",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13445",
+            "recent_price": "13750",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13445",
+            "recent_price": "13750",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "14450",
+            "recent_price": "14664",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "10722.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "14000",
+            "recent_price": "14664",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13899",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13888",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T03:11:27.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13888",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13748",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13500",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13500",
+            "recent_price": "13899",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "15399",
+            "recent_price": "14800",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "12371.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13898",
+            "recent_price": "13999",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "14366.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13600",
+            "recent_price": "13000",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "14366.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13500",
+            "recent_price": "13000",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "14366.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13399",
+            "recent_price": "13000",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "14366.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13000",
+            "recent_price": "12800",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "14366.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13468",
+            "recent_price": "13450",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13288",
+            "recent_price": "13450",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13150",
+            "recent_price": "13000",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13146",
+            "recent_price": "13000",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13145",
+            "recent_price": "1370",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "13300",
+            "recent_price": "13000",
+            "date_time": "2022-04-21T16:59:07.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "12900",
+            "recent_price": "12000",
+            "date_time": "2022-04-21T18:20:55.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "12900",
+            "recent_price": "12000",
+            "date_time": "2022-04-21T18:56:02.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "12998",
+            "recent_price": "12990",
+            "date_time": "2022-04-21T19:13:31.000Z",
+            "avg_day_price": "13293",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "12000",
+            "recent_price": "12000",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "12799",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "11999",
+            "recent_price": "12000",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "12799",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "11999",
+            "recent_price": "11999",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "12799",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "11480",
+            "recent_price": "11000",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "12799",
+            "cheapest_rem": 1
         }
     ],
     "Honor Shard Pouch (S)": [
@@ -8008,6 +11228,412 @@
             "date_time": "2022-04-17T19:25:42.000Z",
             "avg_day_price": "29",
             "cheapest_rem": 86
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-17T19:42:43.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 19
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "29",
+            "date_time": "2022-04-17T20:12:07.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "27",
+            "date_time": "2022-04-17T20:30:53.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "27",
+            "date_time": "2022-04-17T20:52:43.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "29",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "27",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "28",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "29",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "31",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 55
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "30",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "30",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "32",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 167
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 126
+        },
+        {
+            "lowest_price": "31",
+            "recent_price": "30",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 51
+        },
+        {
+            "lowest_price": "32",
+            "recent_price": "32",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 90
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 433
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "28.7",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "36",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "33",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "35",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 37
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "36",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "35",
+            "recent_price": "34",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 17
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "34",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "34",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "34",
+            "recent_price": "34",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "32.2",
+            "cheapest_rem": 403
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "35",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "38",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "39",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 324
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "39",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "38",
+            "recent_price": "37",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 79
+        },
+        {
+            "lowest_price": "33",
+            "recent_price": "33",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "35.5",
+            "cheapest_rem": 12
+        },
+        {
+            "lowest_price": "39",
+            "recent_price": "39",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 1463
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "37",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 99
+        },
+        {
+            "lowest_price": "37",
+            "recent_price": "38",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 108
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 140
+        },
+        {
+            "lowest_price": "36",
+            "recent_price": "36",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 407
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 49
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "29",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 55
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "28",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "29",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 26
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 65
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 59
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 22
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "23",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 39
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "25",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 33
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 45
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "27",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 71
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "24",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 198
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "25",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "36.9",
+            "cheapest_rem": 19
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "27",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "29.9",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "25",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "29.9",
+            "cheapest_rem": 46
+        },
+        {
+            "lowest_price": "23",
+            "recent_price": "22",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "29.9",
+            "cheapest_rem": 54
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "29.9",
+            "cheapest_rem": 270
         }
     ],
     "Life Shard Pouch (S)": [
@@ -8997,6 +12623,405 @@
             "date_time": "2022-04-17T19:26:18.000Z",
             "avg_day_price": "132.5",
             "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T19:43:27.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 31
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T20:12:31.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T20:31:31.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T20:53:22.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "134",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "131",
+            "recent_price": "130",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "129",
+            "recent_price": "130",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "128",
+            "recent_price": "128",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "132.5",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "136",
+            "recent_price": "136",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "136",
+            "recent_price": "136",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "139",
+            "recent_price": "139",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 33
+        },
+        {
+            "lowest_price": "139",
+            "recent_price": "135",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 13
+        },
+        {
+            "lowest_price": "139",
+            "recent_price": "140",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 157
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "134",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 55
+        },
+        {
+            "lowest_price": "147",
+            "recent_price": "150",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "148",
+            "recent_price": "148",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 11
+        },
+        {
+            "lowest_price": "148",
+            "recent_price": "149",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "129",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "148",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "143",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "149",
+            "date_time": "2022-04-19T03:11:27.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 166
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "149",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 152
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 29
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "140",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "147",
+            "recent_price": "147",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "135.5",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "150",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "149",
+            "recent_price": "150",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "155",
+            "recent_price": "155",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "155",
+            "recent_price": "155",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 131
+        },
+        {
+            "lowest_price": "157",
+            "recent_price": "158",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "153",
+            "recent_price": "153",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "129",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "138.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "142",
+            "recent_price": "142",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 24
+        },
+        {
+            "lowest_price": "141",
+            "recent_price": "141",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "140",
+            "recent_price": "142",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "139",
+            "recent_price": "139",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "142",
+            "recent_price": "142",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "70",
+            "recent_price": "70",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 92
+        },
+        {
+            "lowest_price": "57",
+            "recent_price": "56",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "64",
+            "recent_price": "64",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 188
+        },
+        {
+            "lowest_price": "53",
+            "recent_price": "53",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "49",
+            "recent_price": "49",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "51",
+            "recent_price": "51",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 109
+        },
+        {
+            "lowest_price": "53",
+            "recent_price": "51",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 87
+        },
+        {
+            "lowest_price": "44",
+            "recent_price": "50",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "49",
+            "recent_price": "49",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 194
+        },
+        {
+            "lowest_price": "53",
+            "recent_price": "53",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "57",
+            "recent_price": "57",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 105
+        },
+        {
+            "lowest_price": "56",
+            "recent_price": "57",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "70",
+            "recent_price": "70",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "68",
+            "recent_price": "68",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "149.2",
+            "cheapest_rem": 30
+        },
+        {
+            "lowest_price": "68",
+            "recent_price": "68",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "82.09999999999999",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "54",
+            "recent_price": "54",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "82.09999999999999",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "49",
+            "recent_price": "49",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "82.09999999999999",
+            "cheapest_rem": 33
+        },
+        {
+            "lowest_price": "50",
+            "recent_price": "49",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "82.09999999999999",
+            "cheapest_rem": 41
         }
     ],
     "Guardian Stone Crystal": [
@@ -10224,6 +14249,412 @@
             "date_time": "2022-04-17T19:25:21.000Z",
             "avg_day_price": "7.8",
             "cheapest_rem": 306
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T19:42:15.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 58491
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T20:11:52.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 57187
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T20:30:37.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 60252
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T20:52:27.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 60252
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 59107
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 59034
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 58929
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 59300
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "8",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 105
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 56692
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 52102
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 62246
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 61515
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 64720
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 69420
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 67559
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "7",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 57452
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 51406
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 51503
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 269
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 51894
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 49904
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 45835
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 46938
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 53176
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 54872
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 56199
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 56367
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 69203
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 57952
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 63292
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "8",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 33
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 60602
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 62171
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 66260
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 66743
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 68402
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 72513
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 75806
+        },
+        {
+            "lowest_price": "8",
+            "recent_price": "8",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 78530
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 724
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "6",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 105251
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 556
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 3219
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 99873
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 524
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 644
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "5",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 5272
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 105790
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 588
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "6",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 606
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 119218
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 119972
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "7.8",
+            "cheapest_rem": 115223
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "6.9",
+            "cheapest_rem": 118106
+        },
+        {
+            "lowest_price": "6",
+            "recent_price": "7",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "6.9",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "6.9",
+            "cheapest_rem": 120410
+        },
+        {
+            "lowest_price": "7",
+            "recent_price": "7",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "6.9",
+            "cheapest_rem": 118805
         }
     ],
     "Destruction Stone Crystal": [
@@ -11458,6 +15889,412 @@
             "date_time": "2022-04-17T19:25:37.000Z",
             "avg_day_price": "24.2",
             "cheapest_rem": 44
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-17T19:42:36.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 222
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-17T20:12:03.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 312
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "26",
+            "date_time": "2022-04-17T20:30:58.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 817
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "26",
+            "date_time": "2022-04-17T20:52:49.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 817
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "25",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "25",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "25",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 51
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 991
+        },
+        {
+            "lowest_price": "25",
+            "recent_price": "25",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "24.2",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 417
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-18T05:54:46.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-18T06:23:25.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 5227
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "28",
+            "date_time": "2022-04-18T06:37:13.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 54
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "28",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 4273
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-18T07:51:38.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 95
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "28",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 56
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 167
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "30",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 21
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 24035
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "26.8",
+            "cheapest_rem": 1241
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 633
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 31821
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 330
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 680
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "30",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 160
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "29",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 28
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "29",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 77
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "27.9",
+            "cheapest_rem": 637
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-20T05:15:54.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "28",
+            "recent_price": "28",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 79
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "28",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 44
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-20T19:27:23.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 84
+        },
+        {
+            "lowest_price": "30",
+            "recent_price": "30",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 27808
+        },
+        {
+            "lowest_price": "29",
+            "recent_price": "29",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 465
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "28.8",
+            "cheapest_rem": 75
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "28",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "26",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 17
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 2052
+        },
+        {
+            "lowest_price": "26",
+            "recent_price": "26",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "27",
+            "recent_price": "27",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 3464
+        },
+        {
+            "lowest_price": "22",
+            "recent_price": "22",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "24",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 9274
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 103
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "23",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 4906
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "24",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 2347
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "24",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 3393
+        },
+        {
+            "lowest_price": "22",
+            "recent_price": "23",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 20
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "24",
+            "recent_price": "24",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 8751
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "21",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 16
+        },
+        {
+            "lowest_price": "22",
+            "recent_price": "22",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 1667
+        },
+        {
+            "lowest_price": "21",
+            "recent_price": "22",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 234
+        },
+        {
+            "lowest_price": "21",
+            "recent_price": "21",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 2633
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "28.4",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "20",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "23",
+            "cheapest_rem": 7115
+        },
+        {
+            "lowest_price": "20",
+            "recent_price": "19",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "23",
+            "cheapest_rem": 14567
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "19",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "23",
+            "cheapest_rem": 231
+        },
+        {
+            "lowest_price": "19",
+            "recent_price": "20",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "23",
+            "cheapest_rem": 222
         }
     ],
     "Destruction Stone": [
@@ -11541,6 +16378,645 @@
             "date_time": "2022-04-17T19:26:05.000Z",
             "avg_day_price": "100.3",
             "cheapest_rem": 180
+        },
+        {
+            "lowest_price": "100",
+            "recent_price": "100",
+            "date_time": "2022-04-17T19:43:10.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 56
+        },
+        {
+            "lowest_price": "100",
+            "recent_price": "100",
+            "date_time": "2022-04-17T20:12:23.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 15
+        },
+        {
+            "lowest_price": "100",
+            "recent_price": "100",
+            "date_time": "2022-04-17T20:31:21.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "100",
+            "recent_price": "100",
+            "date_time": "2022-04-17T20:53:12.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "95",
+            "recent_price": "100",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "99",
+            "recent_price": "95",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "99",
+            "recent_price": "99",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 38
+        },
+        {
+            "lowest_price": "99",
+            "recent_price": "99",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 46
+        },
+        {
+            "lowest_price": "99",
+            "recent_price": "99",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "100.3",
+            "cheapest_rem": 37
+        },
+        {
+            "lowest_price": "100",
+            "recent_price": "100",
+            "date_time": "2022-04-18T02:35:13.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "105",
+            "recent_price": "105",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 74
+        },
+        {
+            "lowest_price": "103",
+            "recent_price": "103",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "102",
+            "recent_price": "102",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 32
+        },
+        {
+            "lowest_price": "110",
+            "recent_price": "109",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 256
+        },
+        {
+            "lowest_price": "110",
+            "recent_price": "110",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 247
+        },
+        {
+            "lowest_price": "110",
+            "recent_price": "110",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "100",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "103",
+            "recent_price": "103",
+            "date_time": "2022-04-19T03:08:21.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 23
+        },
+        {
+            "lowest_price": "103",
+            "recent_price": "103",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "105",
+            "recent_price": "109",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "107",
+            "recent_price": "105",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "107",
+            "recent_price": "105",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "196",
+            "recent_price": "198",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "105.4",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "131",
+            "recent_price": "131",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "112.2",
+            "cheapest_rem": 27
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "130",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "112.2",
+            "cheapest_rem": 64
+        },
+        {
+            "lowest_price": "167",
+            "recent_price": "168",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "112.2",
+            "cheapest_rem": 6
+        },
+        {
+            "lowest_price": "160",
+            "recent_price": "160",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "112.2",
+            "cheapest_rem": 9
+        },
+        {
+            "lowest_price": "145",
+            "recent_price": "147",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "112.2",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "121",
+            "recent_price": "125",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "122",
+            "recent_price": "122",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "130",
+            "recent_price": "135",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "134",
+            "recent_price": "134",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "138",
+            "recent_price": "137",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 98
+        },
+        {
+            "lowest_price": "83",
+            "recent_price": "83",
+            "date_time": "2022-04-21T16:47:26.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 41
+        },
+        {
+            "lowest_price": "83",
+            "recent_price": "83",
+            "date_time": "2022-04-21T17:11:56.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 47
+        },
+        {
+            "lowest_price": "85",
+            "recent_price": "85",
+            "date_time": "2022-04-21T17:37:23.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 30
+        },
+        {
+            "lowest_price": "84",
+            "recent_price": "84",
+            "date_time": "2022-04-21T18:10:57.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "80",
+            "recent_price": "84",
+            "date_time": "2022-04-21T18:20:55.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 15
+        },
+        {
+            "lowest_price": "75",
+            "recent_price": "80",
+            "date_time": "2022-04-21T18:44:48.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "74",
+            "recent_price": "74",
+            "date_time": "2022-04-21T19:00:10.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "73",
+            "recent_price": "73",
+            "date_time": "2022-04-21T19:03:53.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 7
+        },
+        {
+            "lowest_price": "70",
+            "recent_price": "73",
+            "date_time": "2022-04-21T19:10:43.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 4
+        },
+        {
+            "lowest_price": "69",
+            "recent_price": "69",
+            "date_time": "2022-04-21T19:40:37.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "69",
+            "recent_price": "69",
+            "date_time": "2022-04-21T20:11:42.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 35
+        },
+        {
+            "lowest_price": "67",
+            "recent_price": "67",
+            "date_time": "2022-04-21T20:33:21.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 18
+        },
+        {
+            "lowest_price": "67",
+            "recent_price": "67",
+            "date_time": "2022-04-21T20:36:15.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 8
+        },
+        {
+            "lowest_price": "69",
+            "recent_price": "68",
+            "date_time": "2022-04-21T21:12:03.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 25
+        },
+        {
+            "lowest_price": "70",
+            "recent_price": "76",
+            "date_time": "2022-04-21T22:58:39.000Z",
+            "avg_day_price": "125",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "69",
+            "recent_price": "69",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "112.1",
+            "cheapest_rem": 19
+        },
+        {
+            "lowest_price": "68",
+            "recent_price": "68",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "112.1",
+            "cheapest_rem": 64
+        },
+        {
+            "lowest_price": "65",
+            "recent_price": "65",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "112.1",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "66",
+            "recent_price": "66",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "112.1",
+            "cheapest_rem": 49
+        }
+    ],
+    "Cursed Doll Engraving Recipe": [
+        {
+            "lowest_price": "4599",
+            "recent_price": "4499",
+            "date_time": "2022-04-17T20:12:46.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4550",
+            "recent_price": "4499",
+            "date_time": "2022-04-17T20:31:48.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4550",
+            "recent_price": "4499",
+            "date_time": "2022-04-17T20:53:39.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4399",
+            "recent_price": "4549",
+            "date_time": "2022-04-17T21:10:05.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4399",
+            "recent_price": "4549",
+            "date_time": "2022-04-17T21:13:45.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4400",
+            "recent_price": "4300",
+            "date_time": "2022-04-17T21:20:09.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4398",
+            "recent_price": "4397",
+            "date_time": "2022-04-17T21:44:24.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4396",
+            "recent_price": "4395",
+            "date_time": "2022-04-17T22:10:31.000Z",
+            "avg_day_price": "4581.9",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4760",
+            "recent_price": "4600",
+            "date_time": "2022-04-18T07:38:04.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4700",
+            "recent_price": "4600",
+            "date_time": "2022-04-18T08:11:18.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "5000",
+            "recent_price": "4999",
+            "date_time": "2022-04-18T16:17:53.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 24
+        },
+        {
+            "lowest_price": "4998",
+            "recent_price": "4998",
+            "date_time": "2022-04-18T17:05:43.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4999",
+            "recent_price": "4998",
+            "date_time": "2022-04-18T17:18:48.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4999",
+            "recent_price": "5070",
+            "date_time": "2022-04-18T23:57:48.000Z",
+            "avg_day_price": "4478.8",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4998",
+            "recent_price": "4999",
+            "date_time": "2022-04-19T01:15:28.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "4888",
+            "recent_price": "4800",
+            "date_time": "2022-04-19T02:18:11.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4886",
+            "recent_price": "4887",
+            "date_time": "2022-04-19T03:11:27.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4886",
+            "recent_price": "4887",
+            "date_time": "2022-04-19T03:13:08.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4800",
+            "recent_price": "4887",
+            "date_time": "2022-04-19T03:36:23.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4800",
+            "recent_price": "4800",
+            "date_time": "2022-04-19T03:41:53.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4700",
+            "recent_price": "4800",
+            "date_time": "2022-04-19T03:43:52.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5200",
+            "recent_price": "5299",
+            "date_time": "2022-04-19T22:44:41.000Z",
+            "avg_day_price": "4664.7",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5500",
+            "recent_price": "5499",
+            "date_time": "2022-04-20T17:45:50.000Z",
+            "avg_day_price": "5068.2",
+            "cheapest_rem": 10
+        },
+        {
+            "lowest_price": "5500",
+            "recent_price": "5499",
+            "date_time": "2022-04-20T18:46:48.000Z",
+            "avg_day_price": "5068.2",
+            "cheapest_rem": 14
+        },
+        {
+            "lowest_price": "5499",
+            "recent_price": "5300",
+            "date_time": "2022-04-20T20:24:03.000Z",
+            "avg_day_price": "5068.2",
+            "cheapest_rem": 3
+        },
+        {
+            "lowest_price": "5250",
+            "recent_price": "5300",
+            "date_time": "2022-04-20T21:00:27.000Z",
+            "avg_day_price": "5068.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5099",
+            "recent_price": "5300",
+            "date_time": "2022-04-20T22:28:35.000Z",
+            "avg_day_price": "5068.2",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5149",
+            "recent_price": "5148",
+            "date_time": "2022-04-21T00:10:33.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5148",
+            "recent_price": "4500",
+            "date_time": "2022-04-21T00:53:04.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "5198",
+            "recent_price": "5200",
+            "date_time": "2022-04-21T03:14:42.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5194",
+            "recent_price": "5200",
+            "date_time": "2022-04-21T03:36:36.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5190",
+            "recent_price": "5200",
+            "date_time": "2022-04-21T03:58:30.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5200",
+            "recent_price": "5199",
+            "date_time": "2022-04-21T16:59:07.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 5
+        },
+        {
+            "lowest_price": "4998",
+            "recent_price": "5000",
+            "date_time": "2022-04-21T18:20:55.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "5000",
+            "recent_price": "4999",
+            "date_time": "2022-04-21T18:56:02.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "5100",
+            "recent_price": "5000",
+            "date_time": "2022-04-21T19:13:31.000Z",
+            "avg_day_price": "5244.6",
+            "cheapest_rem": 2
+        },
+        {
+            "lowest_price": "4899",
+            "recent_price": "4899",
+            "date_time": "2022-04-22T00:02:40.000Z",
+            "avg_day_price": "5144.1",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4700",
+            "recent_price": "4898",
+            "date_time": "2022-04-22T01:05:54.000Z",
+            "avg_day_price": "5144.1",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4750",
+            "recent_price": "4700",
+            "date_time": "2022-04-22T01:17:42.000Z",
+            "avg_day_price": "5144.1",
+            "cheapest_rem": 1
+        },
+        {
+            "lowest_price": "4890",
+            "recent_price": "4895",
+            "date_time": "2022-04-22T02:58:50.000Z",
+            "avg_day_price": "5144.1",
+            "cheapest_rem": 2
         }
     ]
 }

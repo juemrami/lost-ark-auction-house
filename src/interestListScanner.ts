@@ -10,6 +10,7 @@ import {
 import { cp, readFileSync, writeFileSync } from "fs";
 import clipboard from "clipboardy";
 import robot from "robotjs";
+import * as d3 from "d3-color";
 const { moveMouse, mouseClick, getPixelColor, moveMouseSmooth, getMousePos } =
   robot;
 const ITEM_GAP_DISTANCE = 57;
@@ -171,15 +172,22 @@ const save_results = (results) => {
   console.log("run `yarn transfer` to push to db");
 };
 const next_page_available = () => {
-  const clickable_arrow_color = "64859a";
-  const color_difference_threshold = 30;
+  const clickable_arrow_color = "59738b";
+  const color_difference_threshold = 20;
   const similarity_score = (hex_color_1, hex_color_2) => {
-    return Math.abs(parseInt(hex_color_1, 16) - parseInt(hex_color_2, 16));
+    const c1 = d3.hsl("#" + hex_color_1);
+    const c2 = d3.hsl("#" + hex_color_2);
+    // console.log(c1, c2);
+
+    // compare color hue values
+    let res = Math.abs(c1.h - c2.h);
+    // console.log(res);
+    return res;
   };
   if (getMousePos() == { x: 1027, y: 891 }) {
     moveMouse(1027, 300);
   }
-  console.log(getPixelColor(1027, 891));
+  console.log(getPixelColor(1027, 891), clickable_arrow_color);
 
   const res =
     similarity_score(getPixelColor(1027, 891), clickable_arrow_color) <=
@@ -204,7 +212,6 @@ const interest_list_size = (img) => {
   console.log("items on page: ", count);
   return count;
 };
-let color = "#3d3d3d3";
 const grab_next_page = async () => {
   moveMouse(1027, 891);
   await wait(20);
