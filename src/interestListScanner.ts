@@ -1,16 +1,12 @@
 import sharp, { Region } from "sharp";
 import { OutputInfo } from "sharp";
 import { ScreenShotRegion, MarketResultRow } from "./utils.js";
-import {
-  wait,
-  captureImage,
-  SEARCH_RESULT_BOX,
-  extractPrices,
-} from "./utils.js";
+import { wait, captureImage } from "./utils.js";
 import { cp, readFileSync, writeFileSync } from "fs";
 import clipboard from "clipboardy";
 import robot from "robotjs";
 import * as d3 from "d3-color";
+import OcrTaskScheduler from "./OcrTaskScheduler.js";
 const { moveMouse, mouseClick, getPixelColor, moveMouseSmooth, getMousePos } =
   robot;
 const ITEM_GAP_DISTANCE = 57;
@@ -53,6 +49,10 @@ const INTEREST_PAGE = {
     height: 28,
   },
 };
+const ocr = await OcrTaskScheduler.initialize([
+  { num_of_workers: 2, lang: "digits_comma" },
+  { num_of_workers: 1, lang: "eng" },
+]);
 export const scanInterestList = async () => {
   console.log("'Interest List' scrape starting...");
   console.log("focus your Lost Ark window within 2 seconds...");
@@ -60,13 +60,14 @@ export const scanInterestList = async () => {
   console.log("Starting now.");
 
   // 1350 x 569
-  let counts: number[] = [];
+  let items_at_page: number[] = [];
   const pages: Buffer[] = [];
-  let current_time = Date();
+
   console.log("Refreshing page...");
   await refresh_list();
+  let current_time = Date();
   do {
-    if (counts[0]) {
+    if (items_at_page[0]) {
       console.log("moving to next page...");
       await grab_next_page();
     }
@@ -78,18 +79,18 @@ export const scanInterestList = async () => {
       true
     );
     pages.push(screenshot);
-    counts.push(interest_list_size(screenshot));
+    items_at_page.push(interest_list_size(screenshot));
   } while (next_page_available());
   console.log("Starting image parsing...\nYou can move mouse now");
 
-  if (counts.length === 0) {
+  if (items_at_page.length === 0) {
     console.log("nothing scanned exiting");
     process.exit();
   }
 
   const data = [];
   const results = {};
-  for (const [count, page_image] of zip(counts, pages)) {
+  for (const [count, page_image] of zip(items_at_page, pages)) {
     if (count === 0) {
       console.log("page empty or not on screen\n exiting...");
     }
@@ -120,6 +121,64 @@ export const scanInterestList = async () => {
   save_results(results);
   process.exit();
 };
+async function extractPrices(image_buffer: Buffer, region?: MarketResultRow) {
+  // console.log(ocr);
+
+  const getRecent = ocr.parseImage(
+    image_buffer,
+    "digits_comma",
+    region.RECENT_PRICE
+  );
+  const getLowest = ocr.parseImage(
+    image_buffer,
+    "digits_comma",
+    region.LOWEST_PRICE
+  );
+  let getName = undefined;
+  if (region.ITEM_NAME) {
+    getName = ocr.parseImage(image_buffer, "eng", region.ITEM_NAME);
+  }
+  const getAvg = ocr.parseImage(
+    image_buffer,
+    "digits_comma",
+    region.AVG_DAILY_PRICE
+  );
+  const getCheapestRem = ocr.parseImage(
+    image_buffer,
+    "digits_comma",
+    region.CHEAPEST_REM
+  );
+  let recent = await getRecent;
+  let lowest = await getLowest;
+  let avg_daily = await getAvg;
+  let cheapest_rem = await getCheapestRem;
+  let item_name = await getName;
+  console.log(item_name);
+  console.log(recent, lowest, cheapest_rem);
+  if (
+    recent.length == 0 ||
+    lowest.length == 0 ||
+    recent === undefined ||
+    lowest === undefined
+  ) {
+    return undefined;
+  }
+  let time = Date();
+  let bundle_size = null;
+  let lowest_price = Number(lowest);
+  let recent_price = Number(recent);
+  avg_daily = Number(avg_daily);
+  cheapest_rem = Number(cheapest_rem);
+  return {
+    item_name: item_name,
+    price: recent_price,
+    lowPrice: lowest_price,
+    unitSize: bundle_size,
+    time,
+    avg_daily,
+    cheapest_rem,
+  };
+}
 const zip = (a, b) => a.map((k, i) => [k, b[i]]);
 const calculate_regions = (offset_index: number) => {
   const res: MarketResultRow = {

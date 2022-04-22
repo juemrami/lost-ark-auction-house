@@ -18,12 +18,11 @@ interface initOptions {
 export default class OcrTaskScheduler {
   static NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
   static NUM_CHARS = "0123456789.";
-  #ocr_workers;
   #alpha_scheduler: Scheduler;
   #numeric_scheduler: Scheduler;
 
   private constructor(ocr_workers: OcrWorker[]) {
-    let _workers = [];
+    // let _workers = [];
     this.#alpha_scheduler = createScheduler();
     this.#numeric_scheduler = createScheduler();
     for (const { worker_id, worker, lang } of ocr_workers) {
@@ -31,16 +30,14 @@ export default class OcrTaskScheduler {
         ? this.#alpha_scheduler.addWorker(worker)
         : this.#numeric_scheduler.addWorker(worker);
 
-      _workers.push(worker);
+      // _workers.push(worker);
     }
     console.log(
       this.#alpha_scheduler.getNumWorkers(),
       this.#numeric_scheduler.getNumWorkers()
     );
 
-    this.#ocr_workers = ocr_workers;
     // this.#tesseract_workers = _workers;
-    debugger;
   }
   static async initialize(options: initOptions[]) {
     let workers: OcrWorker[] = [];
@@ -75,15 +72,14 @@ export default class OcrTaskScheduler {
         workers.push(ocr_worker);
       }
     }
-    debugger;
     return new OcrTaskScheduler(workers);
   }
-  async parseImage(image_buffer, lang, dim?: any): Promise<string> {
+  async parseImage(image_buffer, lang, dim?: any): Promise<string | any> {
     let scheduler =
       lang == "eng" ? this.#alpha_scheduler : this.#numeric_scheduler;
     let {
       data: { text },
-    } = await scheduler.addJob(image_buffer, {
+    } = await scheduler.addJob("recognize", image_buffer, {
       rectangle: {
         left: dim.x,
         top: dim.y,
