@@ -1,4 +1,4 @@
-import { createWorker, createScheduler, Worker } from "tesseract.js";
+import { createWorker, createScheduler, Worker, Scheduler } from "tesseract.js";
 
 // create workers 1 name, 1/2 numbers
 // load and intialize them (maybe not initialze )
@@ -18,22 +18,35 @@ interface initOptions {
 export default class OcrTaskScheduler {
   static NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
   static NUM_CHARS = "0123456789.";
-  #tesseract_workers;
-  #task_scheduler;
+  #ocr_workers;
+  #alpha_scheduler: Scheduler;
+  #numeric_scheduler: Scheduler;
 
-  private constructor(workers) {
-    this.#tesseract_workers = workers;
-    this.#task_scheduler = createScheduler();
+  private constructor(ocr_workers: OcrWorker[]) {
+    let _workers = [];
+    this.#alpha_scheduler = createScheduler();
+    this.#numeric_scheduler = createScheduler();
+    for (const { worker_id, worker, lang } of ocr_workers) {
+      lang == "eng"
+        ? this.#alpha_scheduler.addWorker(worker)
+        : this.#numeric_scheduler.addWorker(worker);
+
+      _workers.push(worker);
+    }
+    console.log(
+      this.#alpha_scheduler.getNumWorkers(),
+      this.#numeric_scheduler.getNumWorkers()
+    );
+
+    this.#ocr_workers = ocr_workers;
+    // this.#tesseract_workers = _workers;
+    debugger;
   }
-  // pass and array, and langs, zip
-  /*
-    {num_of_workers: number, lang: string}[]
-  */
   static async initialize(options: initOptions[]) {
     let workers: OcrWorker[] = [];
     for (const { num_of_workers, lang } of options) {
       for (let i = 0; i < num_of_workers; i++) {
-        const _worker = createWorker({
+        const _worker: Worker = createWorker({
           cachePath: process.cwd() + "\\models\\",
           gzip: false,
         });
@@ -50,72 +63,56 @@ export default class OcrTaskScheduler {
           });
         }
         let ocr_worker: OcrWorker = {
+          // tjs doesn't include the id in the Worker
+          // interface for some reason, hence the ignore.
+
+          // @ts-ignore
           worker_id: _worker.id,
+
           worker: _worker,
           lang: lang,
         };
         workers.push(ocr_worker);
-
-        debugger;
       }
     }
+    debugger;
     return new OcrTaskScheduler(workers);
   }
-  async is_worker_busy(worker: Worker) {
-    // await worker.initialize(lang);
-    // if (lang === "eng") {
-    //   await worker.setParameters({
-    //     tessedit_char_whitelist: NAME_CHARS,
-    //   });
-    // } else {
-    //   await worker.setParameters({
-    //     tessedit_char_whitelist: NUM_CHARS,
-    //   });
-    // }
-  }
-  // async parseImage(image_buffer, worker, lang, dim?: any) {
-  //   console.log("job started by ", worker.id);
-  //   await worker.initialize(lang);
-  //   if (lang === "eng") {
-  //     await worker.setParameters({
-  //       tessedit_char_whitelist: OcrTaskScheduler.NAME_CHARS,
-  //     });
-  //   } else {
-  //     await worker.setParameters({
-  //       tessedit_char_whitelist: OcrTaskScheduler.NUM_CHARS,
-  //     });
-  //   }
-  //   let {
-  //     data: { text },
-  //   } = await worker.recognize(image_buffer, {
-  //     rectangle: {
-  //       left: dim.x,
-  //       top: dim.y,
-  //       width: dim.width,
-  //       height: dim.height,
-  //     },
-  //   });
-  //   // console.log(`\tJob done ${worker.id}`);
-  //   // console.log(`-- ocr results: ${text.trim()}`);
-  //   if (lang === "eng") {
-  //     return text.trim();
-  //   }
-  //   if (/unit/.test(text)) {
-  //     // check if is bundle size text
-  //     return text;
-  //   } else if (/\.\d{3,}/.test(text)) {
-  //     // check if misinterpreted comma
-  //     text = text.replace(/\./, "");
-  //     return isNaN(Number(text)) ? "" : text.trim();
-  //   } else {
-  //     // strip space between numbers
-  //     text = text.replace(/\s/g, "");
-  //     return isNaN(Number(text)) ? "" : text;
-  //   }
-  // }
-  async kill_workers() {
-    for (const worker of this.#tesseract_workers) {
-      await worker.terminate();
+  async parseImage(image_buffer, lang, dim?: any): Promise<string> {
+    let scheduler =
+      lang == "eng" ? this.#alpha_scheduler : this.#numeric_scheduler;
+    let {
+      data: { text },
+    } = await scheduler.addJob(image_buffer, {
+      rectangle: {
+        left: dim.x,
+        top: dim.y,
+        width: dim.width,
+        height: dim.height,
+      },
+    });
+
+    if (lang === "eng") {
+      return text.trim();
     }
+    if (/unit/.test(text)) {
+      // check if is bundle size text
+      return text;
+    } else if (/\.\d{3,}/.test(text)) {
+      // check if misinterpreted comma
+      text = text.replace(/\./, "");
+      return isNaN(Number(text)) ? "" : text.trim();
+    } else {
+      // strip space between numbers
+      text = text.replace(/\s/g, "");
+      return isNaN(Number(text)) ? "" : text;
+    }
+  }
+  async kill_workers() {
+    let end = [
+      this.#alpha_scheduler.terminate(),
+      this.#numeric_scheduler.terminate(),
+    ];
+    await Promise.all(end);
   }
 }
