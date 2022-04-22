@@ -4,6 +4,7 @@ import { writeFileSync, readFileSync } from "fs";
 import Tesseract, { createWorker, createScheduler } from "tesseract.js";
 import clipboard from "clipboardy";
 import sharp, { Sharp } from "sharp";
+import OcrTaskScheduler from "./OcrTaskScheduler.js";
 // import * as _sharpjs from "sharp";
 export interface MarketResultRow {
   RECENT_PRICE: ScreenShotRegion;
@@ -82,7 +83,10 @@ export const SEARCH_RESULT_BOX = {
 const NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
 const NUM_CHARS = "0123456789.";
 const results: any = {};
-
+const ocr = await OcrTaskScheduler.initialize([
+  { num_of_workers: 2, lang: "digits_comma" },
+  { num_of_workers: 1, lang: "eng" },
+]);
 export const main = async () => {
   let items = [
     "Guardian Stone Crystal",
@@ -100,7 +104,7 @@ export const main = async () => {
   console.log("you have 2 seconds to focus your Lost Ark game window.");
   await wait(2000);
   console.log("...commencing. dont touch mouse!");
-
+  
   while (items.length > 0) {
     for (const item_name of items) {
       await searchMarket(item_name);
@@ -136,106 +140,29 @@ export const main = async () => {
   console.log("run `yarn transfer` to push to db");
   process.exit();
 };
-async function parseImage(image_buffer, worker, lang, dim?: any) {
-  {
-    // crop and zoom and flatten if needed for better resolution
-    // const image_buffer = sharp(image_buffer)
-    //   .extract({ left: dim.x, top: dim.y, width: dim.width, height: dim.height })
-    //   .resize(dim.width * 4, dim.height * 4, { kernel: "mitchell" })
-    //   .threshold(184)
-    //   .png()
-    //   .toFile(`./temp/image_dump/testcrop${dim.x}.png`);
-    // await image_buffer.toBuffer();
-  }
-  // console.log("job started by ", worker.id);
-  await worker.initialize(lang);
-  if (lang === "eng") {
-    await worker.setParameters({
-      tessedit_char_whitelist: NAME_CHARS,
-    });
-  } else {
-    await worker.setParameters({
-      tessedit_char_whitelist: NUM_CHARS,
-    });
-  }
-  let {
-    data: { text },
-  } = await worker.recognize(image_buffer, {
-    rectangle: {
-      left: dim.x,
-      top: dim.y,
-      width: dim.width,
-      height: dim.height,
-    },
-  });
-  // console.log(`\tJob done ${worker.id}`);
-  // console.log(`-- ocr results: ${text.trim()}`);
-  if (lang === "eng") {
-    return text.trim();
-  }
-  if (/unit/.test(text)) {
-    // check if is bundle size text
-    return text;
-  } else if (/\.\d{3,}/.test(text)) {
-    // check if misinterpreted comma
-    text = text.replace(/\./, "");
-    return isNaN(Number(text)) ? "" : text.trim();
-  } else {
-    // strip space between numbers
-    text = text.replace(/\s/g, "");
-    return isNaN(Number(text)) ? "" : text;
-  }
-}
 
-export async function extractPrices(
-  image_buffer: Buffer,
-  region?: MarketResultRow
-) {
-  const ocr_scheduler = createScheduler();
-  const worker_pool = [];
-  for (const i in Object.keys(region)) {
-    // for (let i = 0; i++; i < 2) {
-    // console.log("worker created", i);
-    worker_pool.push(
-      createWorker({
-        // logger: (m) => console.log(m),
-        // errorHandler: (e) => console.log(console.error()),
-        cachePath: process.cwd() + "\\models\\",
-        gzip: false,
-      })
-    );
-  }
-  for (const worker of worker_pool) {
-    // console.log("loading worker...", worker.id);
-    await worker.load();
-    await worker.loadLanguage("digits_comma+eng");
-  }
-  // console.log("workers ready!");
-  const getRecent = parseImage(
+async function extractPrices(image_buffer: Buffer, region?: MarketResultRow) {
+  const getRecent = ocr.parseImage(
     image_buffer,
-    worker_pool[0],
     "digits_comma",
     region.RECENT_PRICE
   );
-  const getLowest = parseImage(
+  const getLowest = ocr.parseImage(
     image_buffer,
-    worker_pool[1],
     "digits_comma",
     region.LOWEST_PRICE
   );
   let getName = undefined;
   if (region.ITEM_NAME) {
-    getName = parseImage(image_buffer, worker_pool[2], "eng", region.ITEM_NAME);
+    getName = ocr.parseImage(image_buffer, "eng", region.ITEM_NAME);
   }
-  const getAvg = parseImage(
+  const getAvg = ocr.parseImage(
     image_buffer,
-    worker_pool[3],
     "digits_comma",
     region.AVG_DAILY_PRICE
   );
-  const getCheapestRem = parseImage(
+  const getCheapestRem = ocr.parseImage(
     image_buffer,
-    worker_pool[4],
     "digits_comma",
     region.CHEAPEST_REM
   );
@@ -245,7 +172,6 @@ export async function extractPrices(
   let cheapest_rem = await getCheapestRem;
   let item_name = await getName;
   console.log(item_name);
-  const killWorkers = ocr_scheduler.terminate();
   console.log(recent, lowest, cheapest_rem);
   if (
     recent.length == 0 ||
@@ -261,8 +187,6 @@ export async function extractPrices(
   let recent_price = Number(recent);
   avg_daily = Number(avg_daily);
   cheapest_rem = Number(cheapest_rem);
-
-  await killWorkers;
   return {
     item_name: item_name,
     price: recent_price,

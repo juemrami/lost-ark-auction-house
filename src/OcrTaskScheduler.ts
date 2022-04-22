@@ -32,10 +32,10 @@ export default class OcrTaskScheduler {
 
       // _workers.push(worker);
     }
-    console.log(
-      this.#alpha_scheduler.getNumWorkers(),
-      this.#numeric_scheduler.getNumWorkers()
-    );
+    // console.log(
+    //   this.#alpha_scheduler.getNumWorkers(),
+    //   this.#numeric_scheduler.getNumWorkers()
+    // );
 
     // this.#tesseract_workers = _workers;
   }

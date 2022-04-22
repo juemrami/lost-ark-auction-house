@@ -1,5 +1,4 @@
 import sharp, { Region } from "sharp";
-import { OutputInfo } from "sharp";
 import { ScreenShotRegion, MarketResultRow } from "./utils.js";
 import { wait, captureImage } from "./utils.js";
 import { cp, readFileSync, writeFileSync } from "fs";
@@ -66,6 +65,7 @@ export const scanInterestList = async () => {
   console.log("Refreshing page...");
   await refresh_list();
   let current_time = Date();
+  let start = new Date();
   do {
     if (items_at_page[0]) {
       console.log("moving to next page...");
@@ -88,7 +88,7 @@ export const scanInterestList = async () => {
     process.exit();
   }
 
-  const data = [];
+  let data = [];
   const results = {};
   for (const [count, page_image] of zip(items_at_page, pages)) {
     if (count === 0) {
@@ -104,9 +104,12 @@ export const scanInterestList = async () => {
 
     // for all items detected, extract the individual item image
     for (let item_row = 0; item_row < count; item_row++) {
-      data.push(await extractPrices(png_buffer, calculate_regions(item_row)));
+      data.push(extractPrices(png_buffer, calculate_regions(item_row)));
     }
   }
+  data = await Promise.all(data);
+  let stop = new Date();
+  console.log(data);
 
   for (const scan_result of data) {
     let item_name = scan_result.item_name;
@@ -118,12 +121,16 @@ export const scanInterestList = async () => {
     }
   }
   console.log(results);
+  console.log(
+    "Scans done in ",
+    (stop.getTime() - start.getTime()) / 1000 + "s"
+  );
+
   save_results(results);
+  await ocr.kill_workers();
   process.exit();
 };
 async function extractPrices(image_buffer: Buffer, region?: MarketResultRow) {
-  // console.log(ocr);
-
   const getRecent = ocr.parseImage(
     image_buffer,
     "digits_comma",

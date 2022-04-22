@@ -4,7 +4,7 @@ import clipboard from "clipboardy";
 import { createWorker } from "tesseract.js";
 import { wait } from "./helpers.js";
 
-import { captureImage } from "./test.js";
+import { captureImage } from "./utils.js";
 
 export default class AuctionExtractor {
   SEARCH_POS = { x: 1551, y: 243 };

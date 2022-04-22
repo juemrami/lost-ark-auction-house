@@ -12,13 +12,11 @@
     "**/.factorypath": true,
     "node_modules": true,
     "src/data/recipes.json": true,
-    "prisma/seed_from_sheets.ts": true,
-    "src/AuctionExctractor.js": true
+    "prisma/seed_from_sheets.ts": true
   },
   "hide-files.files": [
     "node_modules",
     "src/data/recipes.json",
-    "prisma/seed_from_sheets.ts",
-    "src/AuctionExctractor.js"
+    "prisma/seed_from_sheets.ts"
   ]
 }

@@ -1,4 +1,3 @@
-import { test } from "./testing_grounds.js";
 import { main } from "./utils.js";
 import { scanInterestList } from "./interestListScanner.js";
 import prompt from "prompt";
@@ -22,7 +21,6 @@ await prompt.get(["choice"], async function (err, { choice }) {
   } else if (choice == 4) {
     process.exit();
   } else if (choice == 3) {
-    await test();
   } else await scanInterestList();
 });
 // process.exit();
