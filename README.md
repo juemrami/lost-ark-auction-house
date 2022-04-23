@@ -22,8 +22,7 @@ yarn save
 
 
 ## To do
-    [x] Re query for failed searches
-    [ ] use in-game interest list instead of passed list of strings
+    [x] use in-game interest list instead of passed list of strings
     [ ] check if game is in 21:9 to warn user and not start program  
     [x] implement better refetching system. 
     [ ] make api server to connect it to google sheets
