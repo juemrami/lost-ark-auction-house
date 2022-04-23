@@ -12,7 +12,7 @@ interface OcrWorker {
   lang: string;
 }
 interface initOptions {
-  num_of_workers: number;
+  threads: number;
   lang: string;
 }
 export default class OcrTaskScheduler {
@@ -41,7 +41,7 @@ export default class OcrTaskScheduler {
   }
   static async initialize(options: initOptions[]) {
     let workers: OcrWorker[] = [];
-    for (const { num_of_workers, lang } of options) {
+    for (const { threads: num_of_workers, lang } of options) {
       for (let i = 0; i < num_of_workers; i++) {
         const _worker: Worker = createWorker({
           cachePath: process.cwd() + "\\models\\",

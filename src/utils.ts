@@ -84,8 +84,8 @@ const NAME_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz() ";
 const NUM_CHARS = "0123456789.";
 const results: any = {};
 const ocr = await OcrTaskScheduler.initialize([
-  { num_of_workers: 2, lang: "digits_comma" },
-  { num_of_workers: 1, lang: "eng" },
+  { threads: 2, lang: "digits_comma" },
+  { threads: 1, lang: "eng" },
 ]);
 export const main = async () => {
   let items = [

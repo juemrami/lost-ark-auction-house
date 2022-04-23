@@ -48,16 +48,17 @@ const INTEREST_PAGE = {
     height: 28,
   },
 };
-const ocr = await OcrTaskScheduler.initialize([
-  { num_of_workers: 2, lang: "digits_comma" },
-  { num_of_workers: 1, lang: "eng" },
+const _ocr = OcrTaskScheduler.initialize([
+  { threads: 2, lang: "digits_comma" },
+  { threads: 1, lang: "eng" },
 ]);
+let ocr: any;
 export const scanInterestList = async () => {
   console.log("'Interest List' scrape starting...");
   console.log("focus your Lost Ark window within 2 seconds...");
   await wait(2000);
   console.log("Starting now.");
-
+  ocr = await _ocr;
   // 1350 x 569
   let items_at_page: number[] = [];
   const pages: Buffer[] = [];
@@ -109,7 +110,7 @@ export const scanInterestList = async () => {
   }
   data = await Promise.all(data);
   let stop = new Date();
-  console.log(data);
+  // console.log(data);
 
   for (const scan_result of data) {
     let item_name = scan_result.item_name;
