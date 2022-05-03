@@ -128,8 +128,7 @@ export const scanInterestList = async () => {
   );
 
   save_results(results);
-  await ocr.kill_workers();
-  process.exit();
+  // process.exit();
 };
 async function extractPrices(image_buffer: Buffer, region?: MarketResultRow) {
   const getRecent = ocr.parseImage(

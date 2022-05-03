@@ -1,7 +1,6 @@
 import Prisma from "@prisma/client";
 import { readFileSync, writeFileSync } from "fs";
 import { price_data, market_item } from "@prisma/client";
-import { tree } from "d3";
 import { Decimal } from "@prisma/client/runtime";
 
 const prisma = new Prisma.PrismaClient();
