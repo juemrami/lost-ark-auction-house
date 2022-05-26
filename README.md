@@ -2,8 +2,7 @@
 
 This is a fork i created for the specific use case of tracking auction price data on honing materials.
 
-*remove*
-
+It will parse all the items on your interest list with all the data available on that page. Once parse it saves it in a json file called recent_scans.
 
 ## OCR data from auction house
 This controls your mouse and uses OCR to extract the price information. 
@@ -15,10 +14,17 @@ yarn scan
 
 
 ## Save data
-Save data onto the sql db
+Save recent_scans data onto the sql db
 ```
-yarn save
+yarn transfer
 ```
+
+## Grab Database
+Push the database info to a JSON file
+```
+yarn export
+```
+
 
 
 ## To do
